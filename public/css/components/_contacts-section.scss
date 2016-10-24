@@ -1,0 +1,74 @@
+.contacts-section {
+  @extend .section-commons;
+  height: 1%;
+  overflow: hidden;
+  background: palette(blue, xx-light);
+  padding: ritmo(10) 40px ritmo(1) 40px;
+  color: palette(blue);
+
+  .section-titles__underlines {
+    background: palette(blue);
+
+    &:after {
+      background: palette(blue);
+    }
+  }
+}
+
+.contact-form {
+  text-align: center;
+  width: 100%;
+}
+
+.contact-form__inputs {
+  height: ritmo(14);
+  margin: 0 auto ritmo(4) auto;
+  font-weight: 300;
+
+  @include mq($until: break-small) {
+    height: ritmo(8);
+    @include ritmo-font-size(14px);
+  }
+
+  @include mq($from: break-small) {
+    height: ritmo(8);
+    @include ritmo-font-size(14px);
+  }
+
+  @include mq($from: break-medium-small) {
+    height: ritmo(12);
+    @include ritmo-font-size(18px);
+  }
+
+  @include mq($from: break-medium) {
+    margin: 0 auto ritmo(7) auto;
+  }
+}
+
+.contact-form__inputs--message-field {
+  height: ritmo(40);
+  margin-bottom: ritmo(8);
+  font-weight: 300;
+
+  textarea {
+    padding: ritmo(3) 0;
+  }
+}
+
+.contact-form__inputs__content {
+  width: 70%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  color: palette(grey);
+  text-indent: 20px;
+  margin-bottom: ritmo(8);
+  @include container(650px);
+}
+
+.contact-form__inputs__submit {
+  @extend .button-green;
+  padding: ritmo(2) 40px;
+  margin: 0 auto;
+  border: none;
+}

@@ -1,0 +1,54 @@
+doctype html
+html(lang='en')
+
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+
+    if environment !== 'production' || (current.path[0] === 'blog' && current.source !== 'index' && public.blog._data[current.source].published === false)
+      meta(name='robots', content='noindex, nofollow')
+
+    title #{ title } | #{ tagline }
+
+    meta(name='description' content='#{description}')
+
+    // OG
+    meta(property='og:title' content='#{ title }')
+    meta(property='og:description' content='#{description}')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content="#{url}/#{current.path.join('/').replace('/index', '')}")
+    meta(property='og:site_name' content='#{siteName}')
+    meta(property='og:image' content='#{url}/images/default-thumbnail.jpg')
+
+    // Twitter
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:site' content='#{twitter}')
+    meta(name='twitter:creator' content='#{twitter}')
+    meta(name='twitter:title' content='#{ title }')
+    meta(name='twitter:description' content='#{description}')
+    meta(name='twitter:image' content='#{url}/images/default-thumbnail.jpg')
+
+
+    // ICONS
+    link(rel='shortcut icon', href='/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/images/favicons/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/images/favicons/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/images/favicons/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='/images/favicons/apple-touch-icon-57-precomposed.png')
+    // FONTS
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700', rel='stylesheet', type='text/css')
+    // CSS
+    link(rel='stylesheet', href='/css/app.css')
+
+  body
+
+    if analytics
+      include ../_partials/_analytics
+
+    include ../_partials/_header
+
+    block page_content
+
+    //- Add JS
+    script(src='/js/site.min.js')

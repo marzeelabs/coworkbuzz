@@ -1,0 +1,28 @@
+section#contacts-section.contacts-section
+
+  h4.section-titles Contatos
+
+  .section-titles__underlines
+
+  .contact-form
+
+      //- Begin contact-form Signup Form
+      form#embedded-subscribe-form.contact-form__validate(action="https://formspree.io/ana.rebelo@pictonio.com", method="post", name="embedded-subscribe-form", target="_blank", novalidate)
+
+
+        // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+        .contact-form__bot(style="position: absolute; left: -5000px;")
+          input(type="text", name="", tabindex="-1", value="")
+
+        .contact-form__inputs
+          input#NAME.contact-form__inputs__content(type="name", value="", name="NAME", placeholder="NOME", required)
+
+        .contact-form__inputs
+          input#EMAIL.contact-form__inputs__content(type="email", value="", name="EMAIL", placeholder="E-MAIL", required)
+
+
+        .contact-form__inputs--message-field
+          textarea#MESSAGE.contact-form__inputs__content(type="message", value="", name="MESSAGE", placeholder="MENSAGEM")
+
+        .contact-form__inputs
+          input#embedded-subscribe.contact-form__inputs__submit(type="submit", value="Enviar", name="send")

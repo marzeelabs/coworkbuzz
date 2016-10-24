@@ -1,0 +1,29 @@
+section#presentation-section.presentation-section
+
+  h4.section-titles Apresentações
+
+  .section-titles__underlines
+
+  .presentation
+
+    for speaker in public._data.index.speakers
+
+      .presentation__item
+
+        a.presentation__image-wrapper(href="#{speaker.drupal}" target="_blank")
+          .presentation__image
+            img(src="/images/speakers/#{speaker.image}")
+          span.drupalday-druplicon
+
+        a.presentation__name(href="#{speaker.drupal}" target="_blank") #{speaker.name}
+
+        a.presentation__company(href="#{speaker.companyUrl}" target="_blank") #{speaker.company}
+
+        if speaker.presentationTitle
+          .presentation__title "#{speaker.presentationTitle}"
+
+        //-if speaker.presentationVideo
+        //-.presentation__video <iframe src="#{speaker.presentationVideo}" frameborder="0" allowfullscreen></iframe>
+
+        if speaker.presentationUrl
+          a.presentation__url(href="#{speaker.presentationUrl}" target="_blank") Ver Apresentação

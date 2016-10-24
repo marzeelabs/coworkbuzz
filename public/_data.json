@@ -1,0 +1,77 @@
+{
+  "index": {
+    "title": "Drupal Day Portugal",
+    "speakers": {
+      "bruno": {
+        "name": "Bruno Mateus",
+        "drupal": "https://www.drupal.org/u/bmateus",
+        "image": "bruno.png",
+        "company": "Vila Vita Parc",
+        "companyUrl": "https://vilavitaparc.com/",
+        "presentationTitle": "Decoupled: Drupal 8 as just a backend for websites and mobile apps",
+        "presentationVideo": "https://www.youtube.com/embed/IUAF3abGY2M",
+        "presentationUrl": "https://docs.google.com/presentation/d/1GIY6gS5c_DqXgAcM5udNfQpodt_RzIO1eenvBdI6U2A/edit"
+      },
+      "catarina": {
+        "name": "Catarina Clemente",
+        "drupal": "https://www.drupal.org/u/catarinavclemente",
+        "image": "catarina.jpg",
+        "company": "Findmore Consulting",
+        "companyUrl": "http://findmore.pt/",
+        "presentationTitle": "Drupal inside out: understand everything before you can build anything",
+        "presentationVideo": "https://www.youtube.com/embed/IUAF3abGY2M",
+        "presentationUrl": "http://www.slideshare.net/catarinavclemente/drupal-inside-out-66235984"
+      },
+      "francisco": {
+        "name": "Francisco Almeida",
+        "drupal": "https://www.drupal.org/u/chicodasilva",
+        "image": "francisco.jpg",
+        "company": "Pictonio",
+        "companyUrl": "http://pictonio.com/",
+        "presentationTitle": "How can I contribute to the Drupal Community.",
+        "presentationVideo": "https://www.youtube.com/embed/IUAF3abGY2M",
+        "presentationUrl": "http://www.slideshare.net/PictonioLda/drupal-day-aveiro-2016-66278405"
+      },
+      "hernani": {
+        "name": "Hernâni Borges de Freitas",
+        "drupal": "https://www.drupal.org/u/hernani",
+        "image": "hernani.jpg",
+        "company": "Acquia",
+        "companyUrl": "http://acquia.com",
+        "presentationTitle": "Welcome to Drupal!",
+        "presentationVideo": "https://www.youtube.com/embed/IUAF3abGY2M",
+        "presentationUrl": "http://www.slideshare.net/hernanibf/intro-to-drupal-65695476"
+      },
+      "luis": {
+        "name": "Luis Correia",
+        "drupal": "https://www.drupal.org/u/lmcorreia",
+        "image": "luis.jpg",
+        "company": "Marzee Labs",
+        "companyUrl": "http://marzeelabs.org",
+        "presentationTitle": "Profiles in Drupal",
+        "presentationVideo": "https://www.youtube.com/embed/IUAF3abGY2M",
+        "presentationUrl": "http://www.slideshare.net/marzee_labs/profiles-in-drupal-drupal-day-aveiro"
+      },
+      "ricardo": {
+        "name": "Ricardo Amaro",
+        "drupal": "https://www.drupal.org/u/ricardoamaro",
+        "image": "ricardo.jpg",
+        "company": "Acquia",
+        "companyUrl": "http://acquia.com",
+        "presentationTitle": "Implementing Site Reliability Engineering",
+        "presentationVideo": "https://www.youtube.com/embed/IUAF3abGY2M",
+        "presentationUrl": "http://pt.slideshare.net/ricardoamaro/sre-drupal-day-aveiro-2016"
+      },
+      "ricardoM": {
+        "name": "Ricardo Marcelino",
+        "drupal": "https://www.drupal.org/u/rfmarcelino",
+        "image": "ricardom.jpg",
+        "company": "Omibee",
+        "companyUrl": "http://omibee.com",
+        "presentationTitle": "Drupal on a business perspective",
+        "presentationVideo": "https://www.youtube.com/embed/IUAF3abGY2M",
+        "presentationUrl": "http://www.slideshare.net/RicardoMarcelino3/drupal-on-a-business-perspective"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.speakers-section {
+  @extend .section-commons;
+  background: palette(white);
+  color: palette(blue);
+
+  .section-titles__underlines {
+    background: palette(blue);
+
+    &:after {
+      background: palette(blue);
+    }
+  }
+}
+
+.speakers {
+  @include container(1000px);
+}
+
+.speakers__item {
+  display: inline-block;
+  vertical-align: top;
+  width: span(3);
+  @include gutters();
+  @include ritmo-bottom-margin(5);
+  transition: color ease .5s;
+
+  @include mq($from: break-medium) {
+    width: span(2);
+    @include ritmo-bottom-margin(10);
+  }
+
+  @include mq($from: break-large) {
+    width: span(1.5);
+    @include ritmo-bottom-margin(10);
+  }
+}
+
+.speakers__image-wrapper {
+  width: 85px;
+  margin: 0 auto ritmo(2);
+  position: relative;
+  display: block;
+  color: palette(blue, dark);
+
+  span {
+    position: absolute;
+    background: palette(white);
+    border-radius: 100%;
+    right: -10px;
+    bottom: -5px;
+    z-index: 10;
+    @include ritmo-font-size(20px, 4);
+  }
+
+  &:hover,
+  &:focus {
+    color: palette(blue);
+  }
+}
+
+.speakers__image {
+  overflow: hidden;
+  border-radius: 100%;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 20%,rgba(0,0,0,.4) 100%);
+    opacity: 0.1;
+    transition: all ease .5s;
+
+    .speakers__image-wrapper:hover & {
+      opacity: 1;
+    }
+  }
+}
+
+.speakers__name {
+  display: block;
+  text-transform: uppercase;
+  color: palette(blue, dark);
+
+  &:hover,
+  &:focus {
+    color: palette(blue);
+  }
+}
+
+.speakers__company {
+  display: block;
+  @include ritmo-font-size(14px);
+  color: palette(blue, dark);
+
+  &:hover,
+  &:focus {
+    color: palette(blue);
+  }
+}

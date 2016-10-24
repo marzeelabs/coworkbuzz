@@ -1,0 +1,34 @@
+.footer {
+  width: auto;
+  background: palette(blue, dark);
+  text-align: center;
+  color: palette(white);
+  padding: 0 0 ritmo(2) 0;
+
+  p {
+
+    @include mq($until: break-medium-small) {
+      @include ritmo-font-size(14px);
+    }
+  }
+
+  .drupal-social__wrapper {
+    margin-bottom: ritmo(3);
+  }
+}
+
+.footer__copyright {
+  background: palette(blue, x-dark);
+  padding: 0 0 ritmo(2) 0;
+
+  p {
+    top:0;
+    display: block;
+    position: relative;
+    transform: translateY(ritmo(3));
+  }
+}
+
+.footer__social {
+  padding-top: ritmo(4);
+}

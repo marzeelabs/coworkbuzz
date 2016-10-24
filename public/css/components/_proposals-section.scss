@@ -1,0 +1,27 @@
+.proposals-section {
+  @extend .section-commons;
+  background: palette(green);
+  color: palette(green, dark);
+  text-align: center;
+
+  .section-titles__underlines {
+    background: palette(green, dark);
+
+    &:after {
+      background: palette(green, dark);
+    }
+  }
+
+  p {
+    display: block;
+    @include container(1000px);
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+  a {
+    @extend .button-white;
+  }
+}

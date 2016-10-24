@@ -1,0 +1,76 @@
+.apply-section {
+  @extend .section-commons;
+  background: palette(blue, x-dark);
+  color: palette(white);
+
+  .section-titles__underlines {
+    background: palette(white);
+
+    &:after {
+      background: palette(white);
+    }
+  }
+
+  p {
+    font-weight: 300;
+    display: block;
+    margin: ritmo(6) auto ritmo(3) auto;
+  }
+
+  p.pre-countdown {
+    margin: ritmo(10) auto 0 auto;
+    text-transform: uppercase;
+    color: palette(blue, light)
+  }
+
+  a {
+    @extend .button-green;
+    padding: ritmo(3) 40px;
+  }
+}
+
+.apply-countdown {
+  @include container (620px);
+  color: palette(white);
+}
+
+.apply-countdown__numbers {
+  display: inline-block;
+  margin-right: 10px;
+  @include ritmo-font-size(30px);
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.2.6em;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include mq($from: break-small) {
+    @include ritmo-font-size(40px);
+    margin-right: 40px;
+  }
+
+  @include mq($from: break-medium) {
+    @include ritmo-font-size(70px);
+  }
+}
+
+.apply-countdown__numbers span {
+  display: block;
+  padding-top: ritmo(1);
+  letter-spacing: 0.2em;
+  @include ritmo-font-size(10px);
+  text-transform: uppercase;
+  text-align: center;
+  color: palette(blue, light);
+  font-weight: 400;
+
+  @include mq($from: break-small) {
+    @include ritmo-font-size(12px);
+  }
+
+  @include mq($from: break-medium) {
+    @include ritmo-font-size(14px);
+  }
+}

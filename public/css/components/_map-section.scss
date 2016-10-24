@@ -1,0 +1,29 @@
+.map-section {
+  @extend .section-commons;
+  background: palette(blue, light);
+  color: palette(white);
+  padding: ritmo(10) 0 0 0;
+
+  .section-titles__underlines {
+    background: palette(white);
+
+    &:after {
+      background: palette(white);
+    }
+  }
+}
+
+.map-section__pointer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: palette(blue, light) transparent transparent transparent;
+}
+
+.map-section__gmap iframe{
+  pointer-events: none;
+}

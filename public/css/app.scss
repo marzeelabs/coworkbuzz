@@ -1,0 +1,31 @@
+// Init file to import sass vendors
+@import "init/init";
+
+//Normalize
+@import "base/normalize";
+
+// Layout styles
+@import "base/layout";
+
+// Import your fonts
+@import 'base/fonts';
+
+// Base styles
+@import "base/base";
+
+
+@import
+  "components/navigation",
+  "components/buttons",
+  "components/social-media",
+  "components/intro-section",
+  "components/about-section",
+  "components/speakers-section",
+  "components/schedule-section",
+  "components/proposals-section",
+  "components/apply-section",
+  "components/map-section",
+  "components/sponsors-section",
+  "components/contacts-section",
+  "components/presentation-section",
+  "components/footer";

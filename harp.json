@@ -1,0 +1,19 @@
+{
+  "globals": {
+    "title": "Drupal Day",
+    "tagline": "Aveiro 2016",
+    "description": "Evento feito para e pela Comunidade Drupal Portugal, tendo, em 2016, lugar em Aveiro",
+    "keywords": "Drupal, Drupal Day 2016, drupalday, Drupal Portugal, Portugal, drupalportugal, Aveiro, research, techdays, communication, CMS, network, Marzeelabs, Pictonio, 2016, Câmara Municipal de Aveiro",
+    "siteName": "Drupal Day 2016",
+    "url":"http://drupalday2016.drupal-pt.org/",
+    "twitter": "@drupalportugal",
+    "disqus": false,
+    "analytics": false,
+    "breakpoints": {
+      "small": 460,
+      "medium": 680,
+      "regular": 820,
+      "large": 1400
+    }
+  }
+}

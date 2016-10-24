@@ -1,0 +1,97 @@
+//
+// Variables partial
+//
+// To make it easier to use all variables and mixins in any Sass file.
+// This is then called in app.scss and is available for all other files.
+//
+
+//
+// Font faces, stacks and sizes
+//
+
+// Ritmo for vertical ritmo management is a powerful tool to set up a vertical
+// ritmo for your entire page.
+// @see https://github.com/marzeelabs/ritmo
+// @see _ritmo.scss for the defaults used.
+// $base-font-size:   16px; // The font size set on the root html element.
+// $base-line-unit: 5px; // This determines the unit of vertical ritmo.
+// $base-line-multi: 5; // The defines the multiplication factor of the unit
+
+// Font family
+$base-font-family: 'Open sans', sans-serif;
+$code-font-family: monospace;
+
+// Header font sizes
+$h1-font-size: 48px;
+$h2-font-size: 40px;
+$h3-font-size: 33px;
+$h4-font-size: 28px;
+$h5-font-size: 23px;
+$h6-font-size: 19px;
+
+
+
+//
+// Colors palette
+// Add your own color groups and variations
+// Call them using the palette function
+// @see _functions.scss
+//
+
+$palettes: (
+  black: (
+    base: rgb(0, 0, 0) // #000 palette(black)
+  ),
+  grey: (
+    xx-light: rgb(250, 250, 250), // #fafafa palette(grey, x-light)
+    x-light: rgb(229, 229, 229), // #e5e5e5 palette(grey, x-light)
+    base: rgb(210, 210, 210), // #c5ccd1 palette(grey)
+    mid-dark: rgb(51, 51, 51) // #333333 palette(grey, mid-dark)
+  ),
+  green: (
+    base: rgb(59, 225, 145), // #3be191 palette(green)
+    mid-dark: rgb(2, 212, 111), // #02d46f palette(green, mid-dark)
+    dark: rgb(0, 85, 44) // #00552c palette(green, dark)
+  ),
+  blue: (
+    xx-light: rgb(230, 240, 245), // #e6f0f5 palette(blue, xx-light)
+    x-light: rgb(0, 255, 255), // #00FFFF palette(blue, xx-light)
+    light: rgb(0, 148, 245), // #0194f5 palette(blue, light)
+    base: rgb(0, 112, 168), // #0070a8 palette(blue)
+    dark: rgb(0, 83, 131), // #005383 palette(blue, dark)
+    x-dark: rgb(0, 47, 78) // #002f4e palette(blue, x-dark)
+  ),
+  white: (
+    base: rgb(255, 255, 255) // #fff palette(white)
+  )
+);
+
+
+//
+// Breakpoints
+//
+
+$mq-breakpoints: (
+  break-extra-small: 400px,
+  break-small: 480px,
+  break-medium-small: 600px,
+  break-medium: 730px,
+  break-large: 980px,
+  break-big: 1200px
+);
+
+//
+// Grids
+//
+// We are going to create a 1240px wide, 6 column grid with 20px gutters between
+// columns (applied as 10px of left/right padding on each column).
+$canvas-width: 1240px;
+
+$susy: (
+  columns: 6,
+  gutters: 1/6,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  //debug: (image: show)
+);
