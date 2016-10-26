@@ -18,7 +18,7 @@
 // $base-line-multi: 5; // The defines the multiplication factor of the unit
 
 // Font family
-$base-font-family: 'Open sans', sans-serif;
+$base-font-family: 'Roboto', sans-serif;
 $code-font-family: monospace;
 
 // Header font sizes
@@ -63,6 +63,13 @@ $palettes: (
   ),
   white: (
     base: rgb(255, 255, 255) // #fff palette(white)
+  ),
+  red: (
+    base: rgb(238, 0, 51), // #EE0033 palette(red)
+    mid-dark: rgb(215, 28, 11) // #D71C0B palette(red, mid-dark)
+  ),
+  orange: (
+    base: rgb(247, 66, 12) //F7420C palette(orange)
   )
 );
 
