@@ -46,7 +46,7 @@ then
   git add -A . || exit 1
   git commit --allow-empty -m "Regenerated static content for $CURRENT_COMMIT" || exit 1
   echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-  chmod 600 deploy_key
+  chmod 600 deployment_key
   ssh-agent bash -c "ssh-add deployment_key; git push --force \"git@github.com:$TRAVIS_REPO_SLUG.git\" $DEPLOY_TO"
 
   echo "Clen up temp files."
