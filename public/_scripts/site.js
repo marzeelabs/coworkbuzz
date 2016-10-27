@@ -89,12 +89,12 @@ $(function() {
   //- function for countdown
   function countdown() {
 
-    var endDate = "September 17, 2016 09:30:00";
+    var endDate = "December 1, 2016 21:30:00";
 
-    $('.apply-countdown').countdown({
+    $('.register-countdown').countdown({
       date: endDate,
       render: function(data) {
-      $(this.el).html("<div class='apply-countdown__numbers'>" + this.leadingZeros(data.days, 2) + " <span>Dias</span></div><div class='apply-countdown__numbers'>" + this.leadingZeros(data.hours, 2) + " <span>Horas</span></div><div class='apply-countdown__numbers'>" + this.leadingZeros(data.min, 2) + " <span>Minutos</span></div><div class='apply-countdown__numbers'>" + this.leadingZeros(data.sec, 2) + " <span>Segundos</span></div>");
+      $(this.el).html("<div class='register-countdown__numbers'>" + this.leadingZeros(data.days, 2) + " <span>Dias</span></div><div class='register-countdown__numbers'>" + this.leadingZeros(data.hours, 2) + " <span>Horas</span></div><div class='register-countdown__numbers'>" + this.leadingZeros(data.min, 2) + " <span>Minutos</span></div><div class='register-countdown__numbers'>" + this.leadingZeros(data.sec, 2) + " <span>Segundos</span></div>");
       }
     });
   };

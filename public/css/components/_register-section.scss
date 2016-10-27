@@ -1,13 +1,11 @@
-.apply-section {
+.register-section {
   @extend .section-commons;
-  background: palette(blue, x-dark);
-  color: palette(white);
 
   .section-titles__underlines {
-    background: palette(white);
+    background: palette(black);
 
     &:after {
-      background: palette(white);
+      background: palette(black);
     }
   }
 
@@ -20,21 +18,20 @@
   p.pre-countdown {
     margin: ritmo(10) auto 0 auto;
     text-transform: uppercase;
-    color: palette(blue, light)
+    color: palette(red, mid-dark)
   }
 
   a {
-    @extend .button-green;
+    @extend .button-primary;
     padding: ritmo(3) 40px;
   }
 }
 
-.apply-countdown {
+.register-countdown {
   @include container (620px);
-  color: palette(white);
 }
 
-.apply-countdown__numbers {
+.register-countdown__numbers {
   display: inline-block;
   margin-right: 10px;
   @include ritmo-font-size(30px);
@@ -56,14 +53,14 @@
   }
 }
 
-.apply-countdown__numbers span {
+.register-countdown__numbers span {
   display: block;
   padding-top: ritmo(1);
   letter-spacing: 0.2em;
   @include ritmo-font-size(10px);
   text-transform: uppercase;
   text-align: center;
-  color: palette(blue, light);
+  color: palette(red, mid-dark);
   font-weight: 400;
 
   @include mq($from: break-small) {

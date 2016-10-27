@@ -18,7 +18,7 @@
 // $base-line-multi: 5; // The defines the multiplication factor of the unit
 
 // Font family
-$base-font-family: 'Open sans', sans-serif;
+$base-font-family: 'Roboto', sans-serif;
 $code-font-family: monospace;
 
 // Header font sizes
@@ -43,7 +43,7 @@ $palettes: (
     base: rgb(0, 0, 0) // #000 palette(black)
   ),
   grey: (
-    xx-light: rgb(250, 250, 250), // #fafafa palette(grey, x-light)
+    xx-light: rgb(250, 250, 250), // #fafafa palette(grey, xx-light)
     x-light: rgb(229, 229, 229), // #e5e5e5 palette(grey, x-light)
     base: rgb(210, 210, 210), // #c5ccd1 palette(grey)
     mid-dark: rgb(51, 51, 51) // #333333 palette(grey, mid-dark)
@@ -63,6 +63,13 @@ $palettes: (
   ),
   white: (
     base: rgb(255, 255, 255) // #fff palette(white)
+  ),
+  red: (
+    base: rgb(238, 0, 51), // #EE0033 palette(red)
+    mid-dark: rgb(215, 28, 11) // #D71C0B palette(red, mid-dark)
+  ),
+  orange: (
+    base: rgb(247, 66, 12) //F7420C palette(orange)
   )
 );
 

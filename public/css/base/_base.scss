@@ -10,7 +10,6 @@
 html {
   font-family: $base-font-family; /* 1 */
   letter-spacing: 0.1em;
-  background: palette(blue);
 }
 
 @include ritmo-baseline();

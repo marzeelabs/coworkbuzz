@@ -1,12 +1,12 @@
 {
   "globals": {
-    "title": "Drupal Day",
-    "tagline": "Aveiro 2016",
-    "description": "Evento feito para e pela Comunidade Drupal Portugal, tendo, em 2016, lugar em Aveiro",
-    "keywords": "Drupal, Drupal Day 2016, drupalday, Drupal Portugal, Portugal, drupalportugal, Aveiro, research, techdays, communication, CMS, network, Marzeelabs, Pictonio, 2016, Câmara Municipal de Aveiro",
-    "siteName": "Drupal Day 2016",
-    "url":"http://drupalday2016.drupal-pt.org/",
-    "twitter": "@drupalportugal",
+    "title": "Cowork Buzz",
+    "tagline": "9, 10 & 11 December ‘16",
+    "description": "Cowork Buzz pops-up as an event dedicated to cowork and curated with a special touch. The buzz is huge! Cowork is here to stay and all the lovers of this movement should come together and understand where the future leds us.",
+    "keywords": "",
+    "siteName": "Cowork Buzz 2016",
+    "url":"http://coworkbuzz.com/",
+    "twitter": "@coworkbuzz",
     "disqus": false,
     "analytics": false,
     "breakpoints": {

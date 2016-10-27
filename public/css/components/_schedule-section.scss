@@ -1,13 +1,13 @@
 .schedule-section {
   @extend .section-commons;
-  background: palette(green);
-  color: palette(green, dark);
+  background: palette(grey, xx-light);
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.3) inset;
 
   .section-titles__underlines {
-    background: palette(green, dark);
+    background: palette(black);
 
     &:after {
-      background: palette(green, dark);
+      background: palette(black);
     }
   }
 }
@@ -26,16 +26,11 @@
 
 .schedule__line {
   width: 100%;
-  border-bottom: palette(green, mid-dark) 2px solid;
+  //border-bottom: rgba(palette(grey, mid-dark), 0.3) 1px solid;
+  box-shadow: 0px 3px 5px -3px rgba(0,0,0,0.3) inset;
   @include ritmo-paddings(4);
   @include clearfix();
   position: relative;
-
-
-  &:first-child {
-    text-transform: uppercase;
-    @include ritmo-font-size(20px);
-  }
 }
 
 .schedule__line__inner {
@@ -46,7 +41,7 @@
 }
 
 .schedule__line--break {
-  background: palette(green, mid-dark);
+  background: palette(grey);
 }
 
 .schedule__line-hour {

@@ -142,7 +142,7 @@
 }
 
 .presentation__url {
-  @extend .button-green;
+  @extend .button-primary;
   margin: ritmo() auto ritmo(3) auto;
   @include ritmo-font-size(10px);
 }
