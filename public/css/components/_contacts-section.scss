@@ -2,15 +2,14 @@
   @extend .section-commons;
   height: 1%;
   overflow: hidden;
-  background: palette(blue, xx-light);
+  background: palette(grey, xx-light);
   padding: ritmo(10) 40px ritmo(1) 40px;
-  color: palette(blue);
 
   .section-titles__underlines {
-    background: palette(blue);
+    background: palette(black);
 
     &:after {
-      background: palette(blue);
+      background: palette(black);
     }
   }
 }
@@ -67,7 +66,7 @@
 }
 
 .contact-form__inputs__submit {
-  @extend .button-green;
+  @extend .button-primary;
   padding: ritmo(2) 40px;
   margin: 0 auto;
   border: none;

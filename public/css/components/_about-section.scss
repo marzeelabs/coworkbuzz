@@ -1,7 +1,5 @@
 .about-section {
   @extend .section-commons;
-  background: palette(blue, dark);
-  color: palette(white);
   padding: ritmo(10) 40px;
 
   p {
@@ -10,10 +8,10 @@
   }
 
   .section-titles__underlines {
-    background: palette(white);
+    background: palette(black);
 
     &:after {
-      background: palette(white);
+      background: palette(black);
     }
   }
 

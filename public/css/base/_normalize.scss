@@ -104,6 +104,7 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  color: palette(red, mid-dark);
 }
 
 /**
@@ -114,6 +115,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
+  color: palette(black);
 }
 
 /**
