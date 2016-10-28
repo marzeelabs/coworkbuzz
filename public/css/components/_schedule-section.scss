@@ -1,7 +1,6 @@
 .schedule-section {
   @extend .section-commons;
-  background: palette(grey, xx-light);
-  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.3) inset;
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0, 0.3) inset;
 
   .section-titles__underlines {
     background: palette(black);

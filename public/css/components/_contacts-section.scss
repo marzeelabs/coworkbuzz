@@ -3,6 +3,7 @@
   height: 1%;
   overflow: hidden;
   background: palette(grey, xx-light);
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.3) inset;
   padding: ritmo(10) 40px ritmo(1) 40px;
 
   .section-titles__underlines {
