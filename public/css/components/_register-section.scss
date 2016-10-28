@@ -1,5 +1,7 @@
 .register-section {
   @extend .section-commons;
+  background: palette(grey, xx-light);
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.3) inset;
 
   .section-titles__underlines {
     background: palette(black);
@@ -17,7 +19,6 @@
 
   p.pre-countdown {
     margin: ritmo(10) auto 0 auto;
-    text-transform: uppercase;
     color: palette(red, mid-dark)
   }
 
@@ -70,4 +71,28 @@
   @include mq($from: break-medium) {
     @include ritmo-font-size(14px);
   }
+}
+
+.register-options__wrapper {
+  @include container(1000px);
+}
+
+.register-option {
+
+  @include mq($from: break-medium) {
+    @include span(2);
+    @include squish(.5);
+  }
+
+}
+
+.register-option__title {
+  @include ritmo-font-size(21px);
+  text-transform: uppercase;
+  font-weight: bold;
+  @include ritmo-bottom-margin(2);
+}
+
+.register-option__info {
+  @include ritmo-bottom-margin(2);
 }

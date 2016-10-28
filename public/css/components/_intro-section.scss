@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     z-index: 50;
-    background: rgba(palette(white), 0.4);
+    background: rgba(palette(white), 0.6);
   }
 
   @include mq($until: break-medium) {
@@ -40,7 +40,7 @@
 
 
 .intro-section__title {
-  @include span(isolate 4 at 2);
+  @include span(isolate 3.5 at 2.25);
   position: absolute;
   top: 50%;
   transform: translate3d(0, -50%, 0);
@@ -54,23 +54,36 @@
 .intro-section__action {
   display: inline-block;
   border-radius: 8px;
-  background: palette(black);
-  color: palette(white);
+  background: rgba(palette(white), 0.8);
+  color: palette(red, mid-dark);
   padding: ritmo(1) 20px;
   @include ritmo-top-margin(2);
   text-transform: uppercase;
   letter-spacing: .2em;
   transform: translateX(-7%);
   width: 45%;
-  min-width: 140px;
+  min-width: 180px;
   text-align: center;
+  margin-bottom: 10px;
 
   &:hover {
-    background: palette(red);
+    background: palette(white);
+    color: palette(red);
   }
 
   @include mq($from: break-medium) {
     @include ritmo-font-size(20px);
-    padding: ritmo(2) 20px;
+    padding: ritmo(2) 10px;
+  }
+}
+
+.intro-section__subtitle {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: bold;
+
+  @include mq($from: break-medium) {
+    @include ritmo-font-size(20px);
   }
 }
