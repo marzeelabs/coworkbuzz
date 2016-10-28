@@ -11,10 +11,24 @@
   }
 }
 
+.schedules__wrapper {
+  @include container (1400px);
+}
+
+
 .schedule {
-  @include container (800px);
   text-align: left;
   margin-top: ritmo(8);
+
+  @include mq($from: break-medium) {
+    @include span(3);
+  }
+}
+
+.schedule__title {
+  @include ritmo-font-size(21px);
+  @include ritmo-bottom-margin(3);
+  text-transform: uppercase;
 }
 
 %schedule-center-text-vertically {
@@ -40,7 +54,7 @@
 }
 
 .schedule__line--break {
-  background: palette(grey);
+  background: palette(grey, x-light);
 }
 
 .schedule__line-hour {
