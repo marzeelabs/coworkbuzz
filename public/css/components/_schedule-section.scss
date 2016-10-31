@@ -18,17 +18,38 @@
 
 .schedule {
   text-align: left;
-  margin-top: ritmo(8);
+  @include ritmo-margins(15);
+  @include container (1400px);
+  padding: 40px;
 
+  &--highlight {
+    background: palette(grey, xx-light);
+  }
+}
+
+.schedule__info {
+  @include mq($from: break-medium) {
+    @include span(3);
+  }
+}
+
+.schedule__times {
   @include mq($from: break-medium) {
     @include span(3);
   }
 }
 
 .schedule__title {
-  @include ritmo-font-size(21px);
-  @include ritmo-bottom-margin(3);
+  @include ritmo-font-size(24px);
+  @include ritmo-bottom-margin(1);
   text-transform: uppercase;
+  text-align: center;
+}
+
+.schedule__subtitle {
+  text-align: center;
+  @include ritmo-bottom-margin(4);
+  font-style: italic;
 }
 
 %schedule-center-text-vertically {

@@ -101,12 +101,12 @@ $(function() {
 
   //- function for g maps
   function gmaps() {
-    $('.map-section__gmap').click(function () {
-        $('.map-section__gmap iframe').css("pointer-events", "auto");
+    $('.map-wrapper').click(function () {
+        $('.map-wrapper iframe').css("pointer-events", "auto");
     });
 
-    $( ".map-section__gmap" ).mouseleave(function() {
-      $('.map-section__gmap iframe').css("pointer-events", "none");
+    $( ".map-wrapper" ).mouseleave(function() {
+      $('.map-wrapper iframe').css("pointer-events", "none");
     });
   };
 

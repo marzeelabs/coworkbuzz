@@ -131,3 +131,8 @@ ul, li {
     margin: 0 auto;
   }
 }
+
+.section-titles__subtitle {
+  @include container(800px);
+  margin-bottom: 50px;
+}
