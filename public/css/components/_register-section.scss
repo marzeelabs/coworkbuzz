@@ -80,10 +80,9 @@
 .register-option {
 
   @include mq($from: break-medium) {
-    @include span(2);
-    @include squish(.5);
+    @include span(2.5);
+    @include squish(.25);
   }
-
 }
 
 .register-option__title {
