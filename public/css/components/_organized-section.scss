@@ -1,4 +1,4 @@
-.sponsors-section {
+.organized-section {
   @extend .section-commons;
   background: palette(white);
   border-top: 1px solid palette(grey, xx-light);
@@ -13,7 +13,7 @@
   }
 }
 
-.sponsors {
+.organized {
   @include container(800px);
   text-align: center;
 
@@ -22,7 +22,7 @@
   }
 }
 
-.sponsors__organization {
+.organized__organization {
   text-align: left;
   //@include span(6);
   margin-bottom: ritmo(5);
@@ -31,15 +31,15 @@
   margin: 0 20px;
 }
 
-.sponsors__organization-organizer {
+.organized__organization-organizer {
   //@include span(3);
 }
 
-.sponsors__host {
+.organized__host {
   //@include span(3);
 }
 
-.sponsors__support {
+.organized__support {
   text-align: left;
   //@include span(6);
   display: inline-block;
