@@ -43,12 +43,12 @@ html(lang='en')
 
   body
 
-    if analytics
-      include ../_partials/_analytics
-
     include ../_partials/_header
 
     block page_content
 
     //- Add JS
     script(src='/js/site.min.js')
+    
+    if analytics
+      include ../_partials/_analytics

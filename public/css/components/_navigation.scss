@@ -29,7 +29,8 @@
     }
   }
 
-  .is-active a {
+  .is-active a,
+  .navigation__menu__item--highlight a {
     font-weight: 700;
     color: palette(black);
 
@@ -152,5 +153,12 @@
     margin: 0 0.5em;
     text-transform: uppercase;
     background-color: transparent;
+
+    &--right {
+      position: absolute;
+      right: 0;
+    }
   }
+
+
 }
