@@ -82,6 +82,7 @@
   vertical-align: middle;
   white-space: nowrap;
   font-weight: bold;
+  line-height: 1.2;
 
   @include mq($from: break-medium) {
     @include ritmo-font-size(20px);

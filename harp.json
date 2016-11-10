@@ -8,7 +8,7 @@
     "url":"http://coworkbuzz.com/",
     "twitter": "@coworkbuzz",
     "disqus": false,
-    "analytics": false,
+    "analytics": "UA-51254986-3",
     "breakpoints": {
       "small": 460,
       "medium": 680,

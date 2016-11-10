@@ -1,6 +1,6 @@
 section#speakers-section.speakers-section
 
-  h4.section-titles Oradores
+  h4.section-titles Speakers
 
   .section-titles__underlines
 
@@ -8,14 +8,13 @@ section#speakers-section.speakers-section
 
     for speaker in public._data.index.speakers
 
-
       .speakers__item
 
-        a.speakers__image-wrapper(href="#{speaker.drupal}" target="_blank")
+        a.speakers__image-wrapper(href="#{speaker.url}" target="_blank")
           .speakers__image
             img(src="/images/speakers/#{speaker.image}")
           span.drupalday-druplicon
 
-        a.speakers__name(href="#{speaker.drupal}" target="_blank") #{speaker.name}
+        a.speakers__name(href="#{speaker.url}" target="_blank") #{speaker.name}
 
         a.speakers__company(href="#{speaker.companyUrl}" target="_blank") #{speaker.company}

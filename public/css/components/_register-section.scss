@@ -21,11 +21,6 @@
     margin: ritmo(10) auto 0 auto;
     color: palette(red, mid-dark)
   }
-
-  a {
-    @extend .button-primary;
-    padding: ritmo(3) 40px;
-  }
 }
 
 .register-countdown {
@@ -79,6 +74,10 @@
 
 .register-option {
 
+  @include mq($until: break-medium) {
+    @include ritmo-bottom-margin(10);
+  }
+
   @include mq($from: break-medium) {
     @include span(2.5);
     @include squish(.25);
@@ -86,12 +85,51 @@
 }
 
 .register-option__title {
-  @include ritmo-font-size(21px);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 300;
   @include ritmo-bottom-margin(2);
+
+  &--hide-mobile {
+    @include mq($until: break-medium) {
+      display: none;
+    }
+  }
+
+  &--hide-desktop {
+    @include mq($from: break-medium) {
+      display: none;
+    }
+  }
 }
 
 .register-option__info {
   @include ritmo-bottom-margin(2);
+
+  &--hide-mobile {
+    @include mq($until: break-medium) {
+      display: none;
+    }
+  }
+
+  &--hide-desktop {
+    @include mq($from: break-medium) {
+      display: none;
+    }
+  }
+}
+
+.register-option__price {
+  @include ritmo-font-size(60px);
+  @include ritmo-top-margin(4);
+  font-weight: 700;
+}
+
+.register-option__note {
+  font-style: italic;
+  @include ritmo-font-size(12px);
+}
+
+.register-option__action {
+  @extend .button-primary;
+  padding: ritmo(3) 40px;
 }
