@@ -1,7 +1,15 @@
 {
   "index": {
     "title": "Cowork Buzz 2016",
+    "ticket_url" : "http://www.eventzilla.net/web/event/cowork-buzz-2138866573",
     "speakers": {
+      "joao": {
+        "name": "João Belchior",
+        "url": "http://fidibiko.com/",
+        "image": "joao_belchior.jpg",
+        "company": "fidibiko",
+        "companyUrl": "http://fidibiko.com/"
+      },
       "nuno": {
         "name": "Nuno Veloso",
         "url": "http://porto.io/",
@@ -9,12 +17,12 @@
         "company": "Porto i/o",
         "companyUrl": "http://porto.io/"
       },
-      "joao": {
-        "name": "João Belchior",
-        "url": "http://fidibiko.com/",
-        "image": "joao_belchior.jpg",
-        "company": "fidibiko",
-        "companyUrl": "http://fidibiko.com/"
+      "coworkbuzz": {
+        "name": "more",
+        "url": "http://coworkbuzz.com/",
+        "image": "coworkbuzz.png",
+        "company": "to be announced",
+        "companyUrl": "mailtohttp://coworkbuzz.com/"
       }
     }
   }
