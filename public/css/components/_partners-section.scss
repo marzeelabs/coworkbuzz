@@ -43,4 +43,10 @@
   display: inline-block;
   vertical-align: top;
   margin: 0 20px;
+
+  p {
+    text-transform: uppercase;
+    font-weight: 700;
+    @include ritmo-font-size(12px);
+  }
 }
