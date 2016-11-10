@@ -28,13 +28,13 @@
 }
 
 .schedule__info {
-  @include mq($from: break-medium) {
+  @include mq($from: break-large) {
     @include span(3);
   }
 }
 
 .schedule__times {
-  @include mq($from: break-medium) {
+  @include mq($from: break-large) {
     @include span(3);
   }
 }
