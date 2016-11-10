@@ -37,14 +37,11 @@ html(lang='en')
     link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/images/favicons/apple-touch-icon-72-precomposed.png')
     link(rel='apple-touch-icon-precomposed', href='/images/favicons/apple-touch-icon-57-precomposed.png')
     // FONTS
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700', rel='stylesheet', type='text/css')
     // CSS
     link(rel='stylesheet', href='/css/app.css')
 
   body
-
-    if analytics
-      include ../_partials/_analytics
 
     include ../_partials/_header
 
@@ -52,3 +49,6 @@ html(lang='en')
 
     //- Add JS
     script(src='/js/site.min.js')
+    
+    if analytics
+      include ../_partials/_analytics

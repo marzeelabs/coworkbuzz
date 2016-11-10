@@ -89,24 +89,24 @@ $(function() {
   //- function for countdown
   function countdown() {
 
-    var endDate = "September 17, 2016 09:30:00";
+    var endDate = "November 23, 2016 18:00:00";
 
-    $('.apply-countdown').countdown({
+    $('.register-countdown').countdown({
       date: endDate,
       render: function(data) {
-      $(this.el).html("<div class='apply-countdown__numbers'>" + this.leadingZeros(data.days, 2) + " <span>Dias</span></div><div class='apply-countdown__numbers'>" + this.leadingZeros(data.hours, 2) + " <span>Horas</span></div><div class='apply-countdown__numbers'>" + this.leadingZeros(data.min, 2) + " <span>Minutos</span></div><div class='apply-countdown__numbers'>" + this.leadingZeros(data.sec, 2) + " <span>Segundos</span></div>");
+      $(this.el).html("<div class='register-countdown__numbers'>" + this.leadingZeros(data.days, 2) + " <span>days</span></div><div class='register-countdown__numbers'>" + this.leadingZeros(data.hours, 2) + " <span>hours</span></div><div class='register-countdown__numbers'>" + this.leadingZeros(data.min, 2) + " <span>minutes</span></div><div class='register-countdown__numbers'>" + this.leadingZeros(data.sec, 2) + " <span>seconds</span></div>");
       }
     });
   };
 
   //- function for g maps
   function gmaps() {
-    $('.map-section__gmap').click(function () {
-        $('.map-section__gmap iframe').css("pointer-events", "auto");
+    $('.map-wrapper').click(function () {
+        $('.map-wrapper iframe').css("pointer-events", "auto");
     });
 
-    $( ".map-section__gmap" ).mouseleave(function() {
-      $('.map-section__gmap iframe').css("pointer-events", "none");
+    $( ".map-wrapper" ).mouseleave(function() {
+      $('.map-wrapper iframe').css("pointer-events", "none");
     });
   };
 

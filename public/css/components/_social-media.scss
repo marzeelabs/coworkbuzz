@@ -1,14 +1,14 @@
-.drupal-social__wrapper {
+.social__wrapper {
   width: 100%;
   text-align: center;
 }
 
-.drupal-social {
+.social {
   margin: 0 auto;
   padding: 0;
 }
 
-.drupal-social li {
+.social li {
   display: inline-block;
   margin-right: ritmo(4);
   @include ritmo-font-size(50px);
@@ -18,11 +18,10 @@
   }
 
   a span {
-    color: palette(white);
     transition: color ease 0.3s;
 
     &:hover {
-      color: palette(blue, x-light);
+
     }
   }
 }

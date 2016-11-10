@@ -1,8 +1,8 @@
-.button-green {
+.button-primary {
   display: inline-block;
   margin: ritmo(3) auto;
   padding: ritmo(2) 15px;
-  background: palette(green);
+  background: palette(red, mid-dark);
   border-radius: 5px;
   color: palette(white);
   text-transform: uppercase;
@@ -12,12 +12,12 @@
   transition: background ease 0.2s;
 
   &:hover {
-    background: palette(blue, light);
+    background: palette(orange);
   }
 }
 
 .button-white {
-  @extend .button-green;
+  @extend .button-primary;
   background: palette(white);
   padding: ritmo(3) 20px;
   color: palette(green);

@@ -1,15 +1,19 @@
 .map-section {
   @extend .section-commons;
-  background: palette(blue, light);
-  color: palette(white);
+  background: palette(grey, xx-light);
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.3) inset;
   padding: ritmo(10) 0 0 0;
 
   .section-titles__underlines {
-    background: palette(white);
+    background: palette(black);
 
     &:after {
-      background: palette(white);
+      background: palette(black);
     }
+  }
+
+  iframe {
+    vertical-align: middle;
   }
 }
 
@@ -21,7 +25,7 @@
   height: 0;
   border-style: solid;
   border-width: 15px 15px 0 15px;
-  border-color: palette(blue, light) transparent transparent transparent;
+  border-color: palette(grey, xx-light) transparent transparent transparent;
 }
 
 .map-section__gmap iframe{

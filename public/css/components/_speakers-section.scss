@@ -1,13 +1,13 @@
 .speakers-section {
   @extend .section-commons;
   background: palette(white);
-  color: palette(blue);
+  color: palette(grey, mid-dark);
 
   .section-titles__underlines {
-    background: palette(blue);
+    background: palette(grey, mid-dark);
 
     &:after {
-      background: palette(blue);
+      background: palette(grey, mid-dark);
     }
   }
 }
@@ -21,17 +21,11 @@
   vertical-align: top;
   width: span(3);
   @include gutters();
-  @include ritmo-bottom-margin(5);
+  @include ritmo-bottom-margin(10);
   transition: color ease .5s;
 
-  @include mq($from: break-medium) {
+  @include mq($from: break-big) {
     width: span(2);
-    @include ritmo-bottom-margin(10);
-  }
-
-  @include mq($from: break-large) {
-    width: span(1.5);
-    @include ritmo-bottom-margin(10);
   }
 }
 

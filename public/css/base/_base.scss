@@ -10,7 +10,6 @@
 html {
   font-family: $base-font-family; /* 1 */
   letter-spacing: 0.1em;
-  background: palette(blue);
 }
 
 @include ritmo-baseline();
@@ -131,4 +130,9 @@ ul, li {
     transform: translateY(ritmo(2));
     margin: 0 auto;
   }
+}
+
+.section-titles__subtitle {
+  @include container(800px);
+  margin-bottom: 50px;
 }

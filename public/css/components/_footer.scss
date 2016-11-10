@@ -1,8 +1,7 @@
 .footer {
   width: auto;
-  background: palette(blue, dark);
+  background: palette(grey, x-light);
   text-align: center;
-  color: palette(white);
   padding: 0 0 ritmo(2) 0;
 
   p {
@@ -18,14 +17,11 @@
 }
 
 .footer__copyright {
-  background: palette(blue, x-dark);
-  padding: 0 0 ritmo(2) 0;
+  background: palette(grey);
+  padding: ritmo(2) 0;
 
   p {
-    top:0;
-    display: block;
-    position: relative;
-    transform: translateY(ritmo(3));
+    margin-bottom: 0;
   }
 }
 
