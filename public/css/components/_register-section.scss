@@ -21,11 +21,6 @@
     margin: ritmo(10) auto 0 auto;
     color: palette(red, mid-dark)
   }
-
-  a {
-    @extend .button-primary;
-    padding: ritmo(3) 40px;
-  }
 }
 
 .register-countdown {
@@ -90,9 +85,8 @@
 }
 
 .register-option__title {
-  @include ritmo-font-size(21px);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 300;
   @include ritmo-bottom-margin(2);
 
   &--hide-mobile {
@@ -133,4 +127,9 @@
 .register-option__note {
   font-style: italic;
   @include ritmo-font-size(12px);
+}
+
+.register-option__action {
+  @extend .button-primary;
+  padding: ritmo(3) 40px;
 }
