@@ -105,6 +105,24 @@
       color: palette(blue);
     }
   }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+
+    li {
+      border-bottom: 1px solid palette(grey);
+      padding: 8px 0;
+      @include ritmo-font-size(14px);
+      text-indent: 10px;
+
+      &:last-child {
+        border-bottom: none;
+        padding: 8px 0 0 0;
+      }
+    }
+  }
 }
 
 .schedule__line-speaker--big-line {
