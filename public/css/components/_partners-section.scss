@@ -42,11 +42,29 @@
   //@include span(6);
   display: inline-block;
   vertical-align: top;
-  margin: 0 20px;
+  margin: 0 20px ritmo(8);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   p {
     text-transform: uppercase;
     font-weight: 700;
     @include ritmo-font-size(12px);
+  }
+}
+
+.partners__support__link {
+  display: block;
+  margin: ritmo(3) auto;
+
+  @include mq($from: break-medium-small) {
+    display: inline-block;
+    margin: 0 45px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }
