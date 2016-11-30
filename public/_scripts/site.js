@@ -89,7 +89,7 @@ $(function() {
   //- function for countdown
   function countdown() {
 
-    var endDate = "November 27, 2016 23:59:00";
+    var endDate = "December 4, 2016 23:59:00";
 
     $('.register-countdown').countdown({
       date: endDate,
