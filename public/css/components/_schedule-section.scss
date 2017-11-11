@@ -37,6 +37,7 @@
   @include mq($from: break-large) {
     @include span(3);
   }
+  @extend %schedule-center-text-horizontally;
 }
 
 .schedule__title {
@@ -56,6 +57,12 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+%schedule-center-text-horizontally {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .schedule__line {
