@@ -2,38 +2,46 @@ import React from 'react';
 import BesugoComponent from 'Besugo';
 
 export default class SocialIcons extends BesugoComponent {
+  static config = {
+    tag: 'SocialIcons',
+  }
+
+  static extraProps(props, xplaceholder) {
+    const icons = xplaceholder.getChildren('SocialIcon');
+    props.social = icons.map(icon => ({
+      name: icon.getAttribute('name'),
+      link: icon.getAttribute('link'),
+    }));
+  }
+
   getData() {
     // Set some default props
     return {
       section: this.props.section || 'footer',
-      social: this.props.social || {
-        facebook: '#',
-        instagram: '#',
-        twitter: '#',
-      },
+      social: this.props.social || [
+        { name: 'facebook', link: '#' },
+      ],
     };
   }
 
   buildIcons(data) {
-    return Object
-      .keys(data.social)
-      .map(x => this.buildIcon(data.section, x, data.social[x]));
+    return data.social.map(icon => this.buildIcon(data.section, icon));
   }
 
-  buildIcon(section, icon, link) {
+  buildIcon(section, icon) {
     // If an empty url was set, don't show the corresponding icon
-    if (!link) {
+    if (!icon || !icon.link) {
       return null;
     }
 
     return (
       <li
-        key={`social-li-${icon}`}
+        key={`social-li-${icon.name}`}
         className={`${section}__social-icons__item`}
       >
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={icon.link} target="_blank" rel="noopener noreferrer">
           <svg>
-            <use href={`#${icon}-icon`} />
+            <use href={`#${icon.name}-icon`} />
           </svg>
         </a>
       </li>
@@ -44,9 +52,11 @@ export default class SocialIcons extends BesugoComponent {
     const data = this.getData();
 
     return (
-      <ul className={`${data.section}__social-icons`}>
-        { this.buildIcons(data) }
-      </ul>
+      <div className="social__wrapper">
+        <ul className={`${data.section}__social-icons social`}>
+          { this.buildIcons(data) }
+        </ul>
+      </div>
     );
   }
 }

@@ -39,6 +39,15 @@
   }
 }
 
+// This basic method is preferred for the usual case, when positioned
+// content will not show outside the bounds of the container.
+//
+// Recommendations include using this in conjunction with a width.
+// Credit: [quirksmode.org](http://www.quirksmode.org/blog/archives/2005/03/clearing_floats.html)
+@mixin clearfix {
+  overflow: hidden;
+}
+
 // This is an updated version of the PIE clearfix method that reduces the amount of CSS output.
 // If you need to support Firefox before 3.5 you need to use `legacy-pie-clearfix` instead.
 //

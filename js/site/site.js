@@ -1,46 +1,51 @@
 import $ from 'jquery';
 
 $(() => {
-  function filtro() {
-    const $filterControls = $('.section__tags-content__links');
-    const $filterObjects = $('.event-cards__content-item');
-    const filterOutClass = 'filtro-out';
-    const controlActiveClass = 'section__tags-content__links--active';
+  const triggerHashChange = () => {
+    $(window).trigger('hashchange');
+  };
 
-    $filterControls.click(function onCLick(event) {
-      const filterName = $(this).text();
-      $filterControls.removeClass(controlActiveClass);
-      $(this).addClass(controlActiveClass);
+  const scrollToSection = () => {
+    const $sectionElement = $(`section${window.location.hash}-section`);
 
-      if (!filterName.length) {
-        return;
+    if ($sectionElement.length) {
+      // We can't use $(".navigation").outerHeight() because
+      // we'd need to wait for the CSS animation to finish.
+      // That's why we do 60px hardcoded.
+      const scrollTop = $sectionElement.scrollTop() + $sectionElement.offset().top - 59 + 1;
+
+      $('html, body').stop().animate({ scrollTop }, 500);
+    }
+  };
+
+  const setNavigationItemActive = () => {
+    const currentCategory = `/${window.location.pathname.substr(1).split('/')[0]}`;
+    const scrollPosition = $(document).scrollTop() + $('.navigation').outerHeight();
+    const activeClass = 'is-active';
+    const $navLinks = $('.navigation__menu__item a');
+
+    $navLinks.each(function eachNavLink() {
+      const linkHash = $(this).prop('hash');
+      const linkHref = $(this).attr('href');
+      const $section = $(`${linkHash}-section`);
+      const sectionTop = $section.length ? $section.position().top : null;
+      const sectionBottom = $section.length ? $section.position().top + $section.height() : null;
+
+      if (linkHash) {
+        if (sectionTop <= scrollPosition && sectionBottom > scrollPosition) {
+          $(this).parent().addClass(activeClass);
+        }
+        else {
+          $(this).parent().removeClass(activeClass);
+        }
       }
-
-      event.preventDefault();
-
-      const $filteredIn = $filterObjects
-        .addClass(filterOutClass)
-        .filter(`[data-filtro*=${filterName}]`)
-        .removeClass(filterOutClass);
-
-      if (!$filteredIn.length) {
-        $filterObjects.removeClass(filterOutClass);
+      else if (linkHref === currentCategory) {
+        $(this).parent().addClass(activeClass);
       }
-    });
-  }
-
-  // function for g maps
-  /*
-  function gmaps() {
-    $('.section__content__map').click(function () {
-        $('.section__content__map iframe').css("pointer-events", "auto");
-    });
-
-    $( ".section__content__map" ).mouseleave(function() {
-      $('.section__content__map iframe').css("pointer-events", "none");
     });
   };
-  */
-  filtro();
-  // gmaps();
+
+  $(window).on('hashchange', scrollToSection).trigger('hashchange');
+  $(window).on('resize scroll', setNavigationItemActive);
+  $("a[href^='/#']").click(triggerHashChange);
 });

@@ -1,5 +1,16 @@
 {{ define "main" }}
 
-  {{ partial "styleguide.html" . }}
+  {{ partial "homepage/intro.html" . }}
+  {{ partial "homepage/about.html" . }}
+  {{ partial "homepage/register.html" . }}
+  {{ partial "homepage/schedule.html" . }}
+  {{ partial "homepage/map.html" . }}
+
+  <div id="sponsors-section">
+    {{ partial "homepage/organized.html" . }}
+    {{ partial "homepage/partners.html" . }}
+  </div>
+
+  {{ partial "homepage/contacts.html" . }}
 
 {{ end }}

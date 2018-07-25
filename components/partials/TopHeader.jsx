@@ -9,29 +9,7 @@ export default class TopHeader extends BesugoComponent {
   getData() {
     // Set some default props
     return {
-      home: {
-        active: ('home-active' in this.props && this.props['home-active'] === 'true') ? ' is-active' : '',
-        url: ('home-url' in this.props) ? this.props['home-url'] : '/',
-        label: ('home-label' in this.props) ? this.props['home-label'] : 'Home',
-      },
-      pages: {
-        label: ('pages-label' in this.props) ? this.props['pages-label'] : 'Pages',
-      },
-      about: {
-        active: ('about-active' in this.props && this.props['about-active'] === 'true') ? ' is-active' : '',
-        url: ('about-url' in this.props) ? this.props['about-url'] : '/pages/about',
-        label: ('about-label' in this.props) ? this.props['about-label'] : 'About',
-      },
-      people: {
-        active: ('people-active' in this.props && this.props['people-active'] === 'true') ? ' is-active' : '',
-        url: ('people-url' in this.props) ? this.props['people-url'] : '/people',
-        label: ('people-label' in this.props) ? this.props['people-label'] : 'People',
-      },
-      blog: {
-        active: ('blog-active' in this.props && this.props['blog-active'] === 'true') ? ' is-active' : '',
-        url: ('blog-url' in this.props) ? this.props['blog-url'] : '/blog',
-        label: ('blog-label' in this.props) ? this.props['blog-label'] : 'Blog',
-      },
+      ticketurl: ('ticketurl' in this.props) ? this.props.ticketurl : '#',
     };
   }
 
@@ -39,58 +17,52 @@ export default class TopHeader extends BesugoComponent {
     const data = this.getData();
 
     return (
-      <header>
-        <div className="navigation" ref={(div) => { this.domNavigation = div; }}>
-
-          <div className="navigation__mobile-menu__toggle" ref={(div) => { this.domMenuToggle = div; }}>
-            <span className="navigation__mobile-menu__icon" />
+      <section id="pagetop-section">
+        <header>
+          <div className="navigation" id="navigation" ref={(div) => { this.domNavigation = div; }}>
+            <div className="navigation__mobile-menu__toggle" ref={(div) => { this.domMenuToggle = div; }}>
+              <span className="navigation__mobile-menu__icon" />
+            </div>
+            <ul className="navigation__menu">
+              <li className="navigation__menu__item">
+                <a href="/#pagetop">
+                  Home
+                </a>
+              </li>
+              <li className="navigation__menu__item">
+                <a href="/#about">
+                  About
+                </a>
+              </li>
+              <li className="navigation__menu__item">
+                <a href="/#register">
+                  Registration
+                </a>
+              </li>
+              <li className="navigation__menu__item">
+                <a href="/#schedule">
+                  Programme
+                </a>
+              </li>
+              <li className="navigation__menu__item">
+                <a href="/#sponsors">
+                  Sponsors
+                </a>
+              </li>
+              <li className="navigation__menu__item">
+                <a href="/#contacts">
+                  Contact
+                </a>
+              </li>
+              <li className="navigation__menu__item navigation__menu__item--highlight navigation__menu__item--right">
+                <a href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
+                  Get Ticket
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <div className="navigation-logo" ref={(div) => { this.domLogo = div; }}>
-            <a href="/" className="navigation-logo__svg">
-              <svg className="navigation-logo__svg-minified">
-                <use href="#logo-main" />
-              </svg>
-            </a>
-          </div>
-
-          <ul className="navigation__menu">
-
-            <li className={ `navigation__menu-item${data.home.active}` }>
-              <a className="navigation__menu-link" href={ data.home.url }>
-                { data.home.label }
-              </a>
-            </li>
-
-            <li className="navigation__menu-item">
-              <div className="navigation__menu-link is-hidden">
-                { data.pages.label }
-              </div>
-
-              <ul className="navigation__submenu">
-                <li className={ `navigation__menu-item${data.about.active}` }>
-                  <a className="navigation__menu-link" href={ data.about.url }>
-                    { data.about.label }
-                  </a>
-                </li>
-                <li className={ `navigation__menu-item${data.people.active}` }>
-                  <a className="navigation__menu-link" href={ data.people.url }>
-                    { data.people.label }
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li className={ `navigation__menu-item${data.blog.active}` }>
-              <a className="navigation__menu-link" href={ data.blog.url }>
-                { data.blog.label }
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-      </header>
+        </header>
+      </section>
     );
   }
 
