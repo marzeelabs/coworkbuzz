@@ -3,15 +3,15 @@ backend:
   repo: marzeelabs/coworkbuzz # Path to your Github repository
   branch: <% CURRENT_BRANCH %> # Branch to update (current branch dynamically set by Gulp)
 
-media_folder: "/static/images/uploads" # Folder where user uploaded files should go
-public_folder: "/images/uploads"
+media_folder: "/static/media/uploads" # Folder where user uploaded files should go
+public_folder: "/media/uploads"
 publish_mode: "editorial_workflow"
 
 collections: # A list of collections the CMS should be able to edit
 
   - name: "settings"
     label: "Site settings"
-    folder: "content/settings"
+    folder: "data"
     create: false
     editor:
       preview: false
