@@ -1,0 +1,15 @@
+<TopHeader
+  home-active="{{ .IsHome }}"
+  home-url="{{ "/" | relLangURL }}"
+  home-label="{{ i18n "Home" | default "Home" }}"
+  pages-label="{{ i18n "Pages" | default "Pages" }}"
+  about-active="{{ eq (.URL | relLangURL) ("/pages/about/" | relLangURL) }}"
+  about-url="{{ "/pages/about" | relLangURL }}"
+  about-label="{{ i18n "About" | default "About" }}"
+  people-active="{{ eq .Section "people" }}"
+  people-url="{{ "/people" | relLangURL }}"
+  people-label="{{ i18n "People" | default "People" }}"
+  blog-active="{{ eq .Section "blog" }}"
+  blog-url="{{ "/blog" | relLangURL }}"
+  blog-label="{{ i18n "Blog" | default "Blog" }}"
+></TopHeader>

@@ -1,0 +1,14 @@
+{{ range where $.Site.RegularPages "Section" "footer" }}
+
+<EndFooter hidden="true"
+  home-url="{{ "/" | relLangURL }}"
+  about-url="{{ "/pages/about" | relLangURL }}"
+  blog-url="{{ "/blog" | relLangURL }}"
+  copyright={{ .Params.copyright }}
+>
+{{ range $icon, $link := .Params.social }}
+  <Param name="{{ $icon }}" value="{{ $link }}"></Param>
+{{ end }}
+</EndFooter>
+
+{{ end }}

@@ -1,0 +1,36 @@
+// Init file to import sass vendors
+@import "init/init";
+
+//Normalize
+@import "base/normalize";
+
+// Layout styles
+@import "base/layout";
+
+// Base styles
+@import "base/base";
+
+// MZ Harp styles
+// Replace by yours
+@import
+  "components/navigation",
+  "components/links",
+  "components/page",
+  "components/profiles-list",
+  "components/profile-page",
+  "components/blog",
+  "components/blog-post",
+  "components/contact-form",
+  "components/markdown",
+  "components/more-arrow",
+  "components/teaser",
+  "components/table",
+  "components/slider",
+  "components/footer",
+  "components/styleguide";
+
+// Vendor styles
+
+// Slick Carousel Slider
+@import "slick-carousel/slick/slick.scss";
+@import "vendors/slick";

@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<BlogPost
+  author="{{ i18n "Author" | default "Author" }}"
+  image="{{ .Params.Image }}"
+  title="{{ .Title }}"
+>
+  <BlogPostContent>
+    {{ jsonify .Content }}
+  </BlogPostContent>
+  {{ range .Params.people }}
+    {{ range where (where $.Site.RegularPages "Section" "people") ".Params.title" .person }}
+      <BlogPostAuthor
+        link="{{ .URL }}"
+        image="{{ .Params.Image }}"
+        title="{{ .Title }}"
+        summary="{{ .Summary }}"
+      ></BlogPostAuthor>
+    {{ end }}
+  {{ end }}
+</BlogPost>
+
+{{ end }}
