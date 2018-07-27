@@ -1,0 +1,41 @@
+backend:
+  name: github
+  repo: marzeelabs/coworkbuzz # Path to your Github repository
+  branch: <% CURRENT_BRANCH %> # Branch to update (current branch dynamically set by Gulp)
+
+media_folder: "/static/media/uploads" # Folder where user uploaded files should go
+public_folder: "/media/uploads"
+
+collections: # A list of collections the CMS should be able to edit
+
+  - name: "settings"
+    label: "Site settings"
+    folder: "data"
+    format: "yml"
+    create: false
+    editor:
+      preview: false
+    fields:
+      - label: "[hidden]"
+        name: "title"
+        widget: "string"
+        default: "Enter here to edit."
+      - label: "Site name"
+        name: "name"
+        widget: "string"
+      - label: "Tagline"
+        name: "tagline"
+        widget: "string"
+      - label: "Ticket URL"
+        name: "ticketurl"
+        widget: "string"
+      - label: "Facebook"
+        name: "facebook"
+        widget: "string"
+      - label: "Twitter"
+        name: "twitter"
+        widget: "string"
+      - label: "Google Analytics tracking code"
+        name: "ga"
+        widget: "string"
+        required: false
