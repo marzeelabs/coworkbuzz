@@ -1,0 +1,85 @@
+.register-section {
+  @extend .section-commons;
+  background: palette(grey, xx-light);
+  box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.3) inset;
+
+  .section-titles__underlines {
+    background: palette(black);
+
+    &:after {
+      background: palette(black);
+    }
+  }
+
+  p {
+    font-weight: 300;
+    display: block;
+    margin: ritmo(6) auto ritmo(3) auto;
+  }
+}
+
+.register-options__wrapper {
+  @include container(1000px);
+}
+
+.register-option {
+
+  @include mq($until: break-medium) {
+    @include ritmo-bottom-margin(10);
+  }
+
+  @include mq($from: break-medium) {
+    @include span(2.5);
+    @include squish(.25);
+  }
+}
+
+.register-option__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  @include ritmo-bottom-margin(2);
+
+  &--hide-mobile {
+    @include mq($until: break-medium) {
+      display: none;
+    }
+  }
+
+  &--hide-desktop {
+    @include mq($from: break-medium) {
+      display: none;
+    }
+  }
+}
+
+.register-option__info {
+  @include ritmo-bottom-margin(2);
+
+  &--hide-mobile {
+    @include mq($until: break-medium) {
+      display: none;
+    }
+  }
+
+  &--hide-desktop {
+    @include mq($from: break-medium) {
+      display: none;
+    }
+  }
+}
+
+.register-option__price {
+  @include ritmo-font-size(60px);
+  @include ritmo-top-margin(4);
+  font-weight: 700;
+}
+
+.register-option__note {
+  font-style: italic;
+  @include ritmo-font-size(12px);
+}
+
+.register-option__action {
+  @extend .button-primary;
+  padding: ritmo(3) 40px;
+}

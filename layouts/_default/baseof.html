@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Params.locale }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    {{ partial "pagetitle.html" . }}
+
+    {{ if $.Site.Data.settings.ga }}
+      <!-- Global Site Tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ $.Site.Data.settings.ga }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ $.Site.Data.settings.ga }}');
+      </script>
+    {{ end }}
+
+    {{ partial "meta.html" . }}
+
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- // FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700' rel='stylesheet' type='text/css'>
+
+    <!-- // CSS -->
+    <link rel='stylesheet' href='/css/app.css'>
+  </head>
+
+  <body>
+    <SVGElements></SVGElements>
+
+    {{ partial "header.html" . }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "footer.html" . }}
+
+    <script src="/js/app.min.js"></script>
+    <script src="/js/main.min.js"></script>
+  </body>
+</html>

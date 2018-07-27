@@ -1,0 +1,23 @@
+# Defaults for all languages
+baseurl: "<% CURRENT_BASEURL %>"
+publishDir: "temp/hugo"
+MetaDataFormat: "yaml"
+blackfriday:
+  hrefTargetBlank: true
+title: "Cowork Buzz 2018"
+googleAnalytics: ""
+taxonomies:
+  tag: "tags"
+
+# i18n
+DefaultContentLanguage: "en"
+# We can't enable this if we want to use Netlify's Identity Service,
+# on login it redrects to the homepage and from there we have to re-redirect to /admin;
+# this would break that flow and redirect to /en instead.
+DefaultContentLanguageInSubdir: false
+
+# Params per language
+Languages:
+  en:
+    locale: "en-GB"
+    description: "Cowork Buzz pops-up as an event dedicated to cowork and curated with a special touch. The buzz is huge! Cowork is here to stay and all the lovers of this movement should come together and understand where the future leds us."

@@ -1,0 +1,7 @@
+{{ if .IsHome }}
+  {{ $.Scratch.Set "pagetitle" (printf "%s | %s" $.Site.Data.settings.name $.Site.Data.settings.tagline) }}
+{{ else }}
+  {{ $.Scratch.Set "pagetitle" (printf "%s | %s" $.Site.Data.settings.name .Title) }}
+{{ end }}
+
+<title>{{ $.Scratch.Get "pagetitle" }}</title>
