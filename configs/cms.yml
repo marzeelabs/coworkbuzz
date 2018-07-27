@@ -5,7 +5,6 @@ backend:
 
 media_folder: "/static/media/uploads" # Folder where user uploaded files should go
 public_folder: "/media/uploads"
-publish_mode: "editorial_workflow"
 
 collections: # A list of collections the CMS should be able to edit
 
