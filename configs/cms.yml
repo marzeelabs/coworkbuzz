@@ -39,3 +39,15 @@ collections: # A list of collections the CMS should be able to edit
         name: "ga"
         widget: "string"
         required: false
+      - label: "Facebook Pixel ID"
+        name: "fp"
+        widget: "string"
+        required: false
+      - label: "Facebook Pixel Events"
+        name: "fpe"
+        widget: "list"
+        required: false
+        fields:
+          - label: "Event"
+            name: "event"
+            widget: "string"
