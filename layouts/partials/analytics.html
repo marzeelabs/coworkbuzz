@@ -23,6 +23,11 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '{{ $.Site.Data.settings.fp }}');
     fbq('track', 'PageView');
+    {{ if $.Site.Data.settings.fpe }}
+      {{ range where $.Site.Data.settings.fpe ".event" "ne" "PageView" }}
+        fbq('track', '{{ .event }}');
+      {{ end }}
+    {{ end }}
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id={{ $.Site.Data.settings.fp }}&ev=PageView&noscript=1"
