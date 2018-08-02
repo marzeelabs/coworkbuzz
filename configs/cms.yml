@@ -32,9 +32,11 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Facebook"
         name: "facebook"
         widget: "string"
+        required: false
       - label: "Twitter"
         name: "twitter"
         widget: "string"
+        required: false
       - label: "Google Analytics tracking code"
         name: "ga"
         widget: "string"

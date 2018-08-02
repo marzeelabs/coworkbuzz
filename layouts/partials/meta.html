@@ -8,9 +8,11 @@
 <meta property="og:site_name" content="{{ $.Site.Data.settings.name }}">
 <meta property="og:image" content="{{ .Site.BaseURL }}/media/default-thumbnail.jpg">
 
+{{ if ne $.Site.Data.settings.twitter "" }}
+  <meta name="twitter:site" content="{{ $.Site.Data.settings.twitter }}">
+  <meta name="twitter:creator" content="{{ $.Site.Data.settings.twitter }}">
+{{ end }}
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="{{ $.Site.Data.settings.twitter }}">
-<meta name="twitter:creator" content="{{ $.Site.Data.settings.twitter }}">
 <meta name="twitter:title" content="{{ $.Scratch.Get "pagetitle" }}">
 <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
 <meta name="twitter:image" content="{{ .Site.BaseURL }}/media/default-thumbnail.jpg">
