@@ -2,6 +2,7 @@ import React from 'react';
 import BesugoComponent from 'Besugo';
 import ReactHtmlParser from 'react-html-parser';
 
+import SrcSet from 'SrcSet';
 import SVGElements from 'partials/SVGElements';
 import TopHeader from 'partials/TopHeader';
 import EndFooter from 'partials/EndFooter';
@@ -55,7 +56,11 @@ export default class Partners extends BesugoComponent {
           { data.partners.map(partner => (
             <div className="partners__support" key={ `partner-${partner.name} `}>
               <a href={ partner.link } target="_blank" rel="noopener noreferrer">
-                <img src={ partner.image } />
+                <SrcSet
+                  src={ partner.image }
+                  sizes="64px"
+                  className="partners__logo"
+                />
               </a>
             </div>
           ))}
@@ -87,7 +92,7 @@ export default class Partners extends BesugoComponent {
           <div className="partners">
             <div className="partners__support">
               <a href="http://marzeelabs.org/" target="_blank" rel="noopener noreferrer">
-                <img src="/media/home/logo_marzeelabs.jpg" />
+                <img src="/media/home/logo_marzeelabs.svg" className="partners__logo" />
               </a>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import BesugoComponent from 'Besugo';
 
+import { SrcSetBg } from 'SrcSet';
 import SVGElements from 'partials/SVGElements';
 import TopHeader from 'partials/TopHeader';
 import EndFooter from 'partials/EndFooter';
@@ -31,6 +32,11 @@ export default class Intro extends BesugoComponent {
 
     return (
       <section className="intro-section" id="intro-section">
+        <SrcSetBg
+          src="media/home/intro.jpg"
+          sizes="100vw"
+        />
+
         <div className="intro-section__inner">
           <div className="intro-section__title">
             <div className="logo-cowork__wrapper">
