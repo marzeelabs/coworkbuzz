@@ -2,127 +2,26 @@
   <h4 class="section-titles">What's happening</h4>
   <div class="section-titles__underlines"></div>
   <div class="schedules__wrapper">
-    <div class="schedule schedule">
-      <div class="schedule__title">Day 1 - Start and chill</div>
-      <div class="schedule__subtitle">8th of December</div>
-      <div class="schedule__info"></div>
-      <div class="schedule__times">
-        <div class="schedule__line">
-          <div class="schedule__line__inner">
-            <div class="schedule__line-hour">14h30 • 15h30</div>
-            <div class="schedule__line-speaker">Check-in</div>
-          </div>
-        </div>
-        <div class="schedule__line">
-          <div class="schedule__line__inner">
-            <div class="schedule__line-hour">15h30 • 16h30</div>
-            <div class="schedule__line-speaker">Intro & Get to know</div>
-          </div>
-        </div>
-        <div class="schedule__line schedule__line--break">
-          <div class="schedule__line__inner">
-            <div class="schedule__line-hour">16h30 • 18h00</div>
-            <div class="schedule__line-speaker">Coworking Europe Conference @ Dublin Recap</div>
-          </div>
-        </div>
-        <div class="schedule__line">
-          <div class="schedule__line__inner">
-            <div class="schedule__line-hour">18h00 • 18h30</div>
-            <div class="schedule__line-speaker">Gimme some coffee!</div>
-          </div>
-        </div>
-        <div class="schedule__line schedule__line--break">
-          <div class="schedule__line__inner">
-            <div class="schedule__line-hour">18h30 • 19h00</div>
-            <div class="schedule__line-speaker">2017 in review: Community achievments</div>
-          </div>
-        </div>
-        <div class="schedule__line">
-          <div class="schedule__line__inner">
-            <div class="schedule__line-hour">19h30 • 20h00</div>
-            <div class="schedule__line-speaker">Wrap up</div>
-          </div>
-        </div>
-        <div class="schedule__line">
-          <div class="schedule__line__inner">
-            <div class="schedule__line-hour">20h00 • 23h59</div>
-            <div class="schedule__line-speaker">Drinks & Dinner</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="schedule">
-        <div class="schedule__title">Day 2 - Let's pick our brains!</div>
-        <div class="schedule__subtitle">9th of December</div>
-        <div class="schedule__info"></div>
-        <div class="schedule__times">
-          <div class="schedule__line">
-            <div class="schedule__line__inner">
-              <div class="schedule__line-hour">09h00 • 10h30</div>
-              <div class="schedule__line-speaker">Breakfast & wake up call</div>
-            </div>
-          </div>
-          <div class="schedule__line schedule__line--break">
-            <div class="schedule__line__inner">
-              <div class="schedule__line-hour">10h30 • 13h00</div>
-              <div class="schedule__line-speaker">Let's brainstorm
-                <ul>
-                  <li>Collaborative economy & future of (co)work </li>
-                  <li>Generations and spaces</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="schedule__line">
-            <div class="schedule__line__inner">
-              <div class="schedule__line-hour">13h00 • 15h00</div>
-              <div class="schedule__line-speaker">Eat, nap, love.</div>
-            </div>
-          </div>
-          <div class="schedule__line schedule__line--break">
-            <div class="schedule__line__inner">
-              <div class="schedule__line-hour">15h00 • 15h30</div>
-              <div class="schedule__line-speaker">Let's talk business</div>
-            </div>
-          </div>
-          <div class="schedule__line schedule__line--break">
-            <div class="schedule__line__inner">
-              <div class="schedule__line-hour">15h30 • 19h00</div>
-              <div class="schedule__line-speaker">Let's share
-                <ul>
-                  <li>Unconference sessions</li>
-                  <li><i>cófi breique</i></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="schedule__line schedule__line--break">
-            <div class="schedule__line__inner">
-              <div class="schedule__line-hour">19h00 • 20h00</div>
-              <div class="schedule__line-speaker">Wrap up
-                <ul>
-                  <li>Set your own game</li>
-                  <li>Beer & collaborative/cooperative clean up :-)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="schedule__line schedule__line">
-            <div class="schedule__line__inner">
-              <div class="schedule__line-hour">20h00 • 23h59</div>
-              <div class="schedule__line-speaker">Hit the food, Jack!</div>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="schedule">
-      <div class="schedule__title">Day 3 - Enjoy the city</div>
-      <div class="schedule__subtitle">10th of December</div>
-      <div class="schedule__subtitle">
-        <p>Cowork is not only about work!</p>
-        <p>Social activities around the city. You'll get a chance to book your spot during the conference!</p>
-      </div>
-      <div class="schedule__times"></div>
-    </div>
+    {{ range where .Site.Pages ".Dir" "homepage/schedule/" }}
+      <ScheduleDay
+        name="{{ .Params.name }}"
+        day="{{ .Params.day }}"
+      >
+        <Content>
+          {{ jsonify .Content }}
+        </Content>
+        {{ range .Params.plan }}
+          <Slot
+            slot="{{ .slot }}"
+            name="{{ .name }}"
+            break="{{ .break }}"
+          >
+            <Subs>
+              {{ jsonify .subs }}
+            </Subs>
+          </Slot>
+        {{ end }}
+      </ScheduleDay>
+    {{ end }}
   </div>
 </section>

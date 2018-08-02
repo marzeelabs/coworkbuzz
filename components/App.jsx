@@ -9,6 +9,11 @@ import SocialIcons from 'partials/SocialIcons';
 import MoreArrow from 'MoreArrow';
 import SrcSet, { SrcSetBg } from 'SrcSet';
 
+import Intro from 'homepage/Intro';
+import About from 'homepage/About';
+import Register from 'homepage/Register';
+import ScheduleDay from 'homepage/ScheduleDay';
+
 [
   Previews,
   SVGElements,
@@ -19,6 +24,11 @@ import SrcSet, { SrcSetBg } from 'SrcSet';
   MoreArrow,
   SrcSet,
   SrcSetBg,
+
+  Intro,
+  About,
+  Register,
+  ScheduleDay,
 ].forEach((Comp) => {
   Comp.initialize();
 });

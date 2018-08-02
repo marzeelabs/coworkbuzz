@@ -1,20 +1,9 @@
-<section id="about-section" class="about-section">
-
-  <h4 class="section-titles">Learning by sharing</h4>
-
-  <div class="section-titles__underlines"></div>
-
-  <p><strong>Cowork Buzz</strong> was born in 2016 as an <strong>event dedicated to cowork and coliving</strong>, curated with a special touch. Since the buzz is really huge, we are here to stay and continue bringing the coworking ecosystem forward.</p>
-
-  <p>Our main idea is to bring the community together: coworking managers & founders, digital nomads that are curious about the collaborative projects, locals that are just thinking to start something in this area and much more. Let's help each other to understand where are we standing, what are the trends, common difficulties, strengths, and <strong>unite and grow</strong>.</p>
-
-  <p>The event will take place in December in Matosinhos (Porto) after the <a href="http://coworkingeurope.net/" target="_blank">Coworking Europe Conference 2017</a> and this will allow us to use Cowork Buzz as a way to debrief the <strong>national community</strong> about what happened in Dublin this year.</p>
-
-  <p>Don't miss out the opportunity to be part of the conversation!</p>
-
-  <h6>Follow us</h6>
-
-  <SocialIcons section="about">
-    <SocialIcon name="facebook" link="{{ $.Site.Data.settings.facebook }}"></SocialIcon>
-  </SocialIcons>
-</section>
+{{ with .Site.GetPage "page" "homepage/about" }}
+  <About
+    header="{{ .Params.header }}"
+  >
+    <Content>
+      {{ jsonify .Content }}
+    </Content>
+  </About>
+{{ end }}
