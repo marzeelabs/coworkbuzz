@@ -2,6 +2,10 @@ import React from 'react';
 import BesugoComponent from 'Besugo';
 import ReactHtmlParser from 'react-html-parser';
 
+import SVGElements from 'partials/SVGElements';
+import TopHeader from 'partials/TopHeader';
+import EndFooter from 'partials/EndFooter';
+
 export default class ScheduleDay extends BesugoComponent {
   static config = {
     tag: 'ScheduleDay',
@@ -64,7 +68,7 @@ export default class ScheduleDay extends BesugoComponent {
         className += ' schedule__line--break';
       }
 
-      const subs = (!slot.subs.length) ? null : (
+      const subs = (!slot.subs.size) ? null : (
         <ul>
           { slot.subs.map(sub => (
             <li key={ `schedule-line-sub-${sub.label}` }>
@@ -90,7 +94,7 @@ export default class ScheduleDay extends BesugoComponent {
     });
   }
 
-  render() {
+  renderBlock() {
     const data = this.getData();
 
     return (
@@ -105,6 +109,17 @@ export default class ScheduleDay extends BesugoComponent {
         <div className="schedule__times">
           { this.renderPlan(data) }
         </div>
+      </div>
+    );
+  }
+
+  renderPreview() {
+    return (
+      <div id="cmsPreview">
+        <SVGElements />
+        <TopHeader />
+        { this.renderBlock() }
+        <EndFooter />
       </div>
     );
   }

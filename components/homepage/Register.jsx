@@ -2,6 +2,10 @@ import React from 'react';
 import BesugoComponent from 'Besugo';
 import ReactHtmlParser from 'react-html-parser';
 
+import SVGElements from 'partials/SVGElements';
+import TopHeader from 'partials/TopHeader';
+import EndFooter from 'partials/EndFooter';
+
 export default class Register extends BesugoComponent {
   static config = {
     tag: 'Register',
@@ -64,7 +68,7 @@ export default class Register extends BesugoComponent {
     ));
   }
 
-  render() {
+  renderBlock() {
     const data = this.getData();
 
     return (
@@ -80,6 +84,17 @@ export default class Register extends BesugoComponent {
           { this.renderTickets(data) }
         </div>
       </section>
+    );
+  }
+
+  renderPreview() {
+    return (
+      <div id="cmsPreview">
+        <SVGElements />
+        <TopHeader />
+        { this.renderBlock() }
+        <EndFooter />
+      </div>
     );
   }
 }

@@ -1,6 +1,10 @@
 import React from 'react';
 import BesugoComponent from 'Besugo';
 
+import SVGElements from 'partials/SVGElements';
+import TopHeader from 'partials/TopHeader';
+import EndFooter from 'partials/EndFooter';
+
 export default class Intro extends BesugoComponent {
   static config = {
     tag: 'Intro',
@@ -22,7 +26,7 @@ export default class Intro extends BesugoComponent {
     return this.props;
   }
 
-  render() {
+  renderBlock() {
     const data = this.getData();
 
     return (
@@ -43,6 +47,17 @@ export default class Intro extends BesugoComponent {
           </div>
         </div>
       </section>
+    );
+  }
+
+  renderPreview() {
+    return (
+      <div id="cmsPreview">
+        <SVGElements />
+        <TopHeader />
+        { this.renderBlock() }
+        <EndFooter />
+      </div>
     );
   }
 }

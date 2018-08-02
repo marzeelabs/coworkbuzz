@@ -2,6 +2,10 @@ import React from 'react';
 import BesugoComponent from 'Besugo';
 import ReactHtmlParser from 'react-html-parser';
 
+import SVGElements from 'partials/SVGElements';
+import TopHeader from 'partials/TopHeader';
+import EndFooter from 'partials/EndFooter';
+
 export default class About extends BesugoComponent {
   static config = {
     tag: 'About',
@@ -33,7 +37,7 @@ export default class About extends BesugoComponent {
     return data;
   }
 
-  render() {
+  renderBlock() {
     const data = this.getData();
 
     return (
@@ -46,6 +50,17 @@ export default class About extends BesugoComponent {
 
         { data.content }
       </section>
+    );
+  }
+
+  renderPreview() {
+    return (
+      <div id="cmsPreview">
+        <SVGElements />
+        <TopHeader />
+        { this.renderBlock() }
+        <EndFooter />
+      </div>
     );
   }
 }
