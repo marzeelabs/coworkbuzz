@@ -40,21 +40,21 @@ export default class Intro extends BesugoComponent {
         <div className="intro-section__inner">
           <div className="intro-section__title">
             <div className="logo-cowork__wrapper">
-              <img src="media/home/logo/logo_cowork_baloon.svg" scaling="stretch" className="logo_baloon" />
-              <img src="media/home/logo/logo_cowork_c.svg" scaling="stretch" className="logo_letter_c" />
-              <img src="media/home/logo/logo_cowork_o.svg" scaling="stretch" className="logo_letter_o" />
-              <img src="media/home/logo/logo_cowork_w.svg" scaling="stretch" className="logo_letter_w" />
-              <img src="media/home/logo/logo_cowork_o_2.svg" scaling="stretch" className="logo_letter_o2" />
-              <img src="media/home/logo/logo_cowork_r.svg" scaling="stretch" className="logo_letter_r" />
-              <img src="media/home/logo/logo_cowork_k.svg" scaling="stretch" className="logo_letter_k" />
-              <img src="media/home/logo/logo_cowork_line.svg" scaling="stretch" className="logo_line_separator" />
-              <img src="media/home/logo/logo_cowork_b.svg" scaling="stretch" className="logo_letter_b" />
-              <img src="media/home/logo/logo_cowork_u.svg" scaling="stretch" className="logo_letter_u" />
-              <img src="media/home/logo/logo_cowork_z.svg" scaling="stretch" className="logo_letter_z" />
-              <img src="media/home/logo/logo_cowork_z_2.svg" scaling="stretch" className="logo_letter_z2" />
-              <img src="media/home/logo/logo_cowork_line2.svg" scaling="stretch" className="logo_top-line1" />
-              <img src="media/home/logo/logo_cowork_line3.svg" scaling="stretch" className="logo_top-line2" />
-              <img src="media/home/logo/logo_cowork_line4.svg" scaling="stretch" className="logo_top-line3" />
+              <img src="media/home/logo/logo_cowork_baloon.svg" className="logo_baloon" />
+              <img src="media/home/logo/logo_cowork_c.svg" className="logo_letter_c" />
+              <img src="media/home/logo/logo_cowork_o.svg" className="logo_letter_o" />
+              <img src="media/home/logo/logo_cowork_w.svg" className="logo_letter_w" />
+              <img src="media/home/logo/logo_cowork_o_2.svg" className="logo_letter_o2" />
+              <img src="media/home/logo/logo_cowork_r.svg" className="logo_letter_r" />
+              <img src="media/home/logo/logo_cowork_k.svg" className="logo_letter_k" />
+              <img src="media/home/logo/logo_cowork_line.svg" className="logo_line_separator" />
+              <img src="media/home/logo/logo_cowork_b.svg" className="logo_letter_b" />
+              <img src="media/home/logo/logo_cowork_u.svg" className="logo_letter_u" />
+              <img src="media/home/logo/logo_cowork_z.svg" className="logo_letter_z" />
+              <img src="media/home/logo/logo_cowork_z_2.svg" className="logo_letter_z2" />
+              <img src="media/home/logo/logo_cowork_line2.svg" className="logo_top-line1" />
+              <img src="media/home/logo/logo_cowork_line3.svg" className="logo_top-line2" />
+              <img src="media/home/logo/logo_cowork_line4.svg" className="logo_top-line3" />
             </div>
 
             <a className="intro-section__action" href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
