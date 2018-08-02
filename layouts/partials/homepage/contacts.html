@@ -4,10 +4,10 @@
   <p>
     Get in touch, we like to have penfriends. :-)
     <br>
-    Shoot us an email at <a href="mailto:hello@coworkbuzz.com" target="_blank">hello@coworkbuzz.com</a>.
+    Shoot us an email at <a href="mailto:{{ $.Site.Data.settings.email }}" target="_blank">{{ $.Site.Data.settings.email }}</a>.
   </p>
   <div class="contact-form">
-    <form class="contact-form__validate" id="embedded-subscribe-form" action="https://formspree.io/hello@coworkbuzz.com" method="post" name="embedded-subscribe-form" target="_blank" novalidate="novalidate">
+    <form class="contact-form__validate" id="embedded-subscribe-form" action="https://formspree.io/{{ $.Site.Data.settings.email }}" method="post" name="embedded-subscribe-form" target="_blank" novalidate="novalidate">
       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div class="contact-form__bot" style="position: absolute; left: -5000px;">
         <input type="text"
