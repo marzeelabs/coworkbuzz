@@ -1,7 +1,7 @@
 ---
 title: Enter here to edit.
 partners:
-  - image: /media/uploads/logo_admin.svg
+  - image: /media/uploads/logo_marzeelabs.jpg
     label: Marzee Labs
     link: 'https://marzeelabs.org/'
 ---
