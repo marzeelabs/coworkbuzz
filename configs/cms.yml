@@ -126,6 +126,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "schedule"
     label: "Schedule"
+    label_singular: "Day"
     folder: "content/homepage/schedule"
     format: "yaml-frontmatter"
     slug: "{{title}}"
