@@ -1,17 +1,10 @@
-<section class="partners-section">
-  <h4 class="section-titles">Partners</h4>
-  <div class="section-titles__underlines"></div>
-  <p>
-    This event wouldn’t be possible without the beautiful people behind our partners.
-    <br>
-    Want to <strong>become a partner</strong>? <a href="mailto:hello@coworkbuzz.com" target="_blank">Get in touch!</a>
-  </p>
-  <div class="partners">
-    <div class="partners__support">
-      <p>Binary partner</p>
-      <a href="http://marzeelabs.org/" target="_blank">
-        <img src="/media/home/logo_marzeelabs.jpg"/>
-      </a>
-    </div>
-  </div>
-</section>
+{{ with .Site.GetPage "page" "homepage/partners" }}
+  <Partners>
+    <Content>
+      {{ jsonify .Content }}
+    </Content>
+    {{ range .Params.partners }}
+      <Partner label="{{ .label }}" link="{{ .link }}" image="{{ .image }}"></Partner>
+    {{ end }}
+  </Partners>
+{{ end }}

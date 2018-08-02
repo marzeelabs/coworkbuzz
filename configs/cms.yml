@@ -163,3 +163,30 @@ collections: # A list of collections the CMS should be able to edit
         name: "body"
         widget: "markdown"
         required: false
+
+  - name: "partners"
+    label: "Partners"
+    folder: "content/homepage/partners"
+    format: "yaml-frontmatter"
+    create: false
+    fields:
+      - label: "[hidden]"
+        name: "title"
+        widget: "string"
+        default: "Enter here to edit."
+      - label: "Content"
+        name: "body"
+        widget: "markdown"
+      - label: "Partners"
+        name: "partners"
+        widget: "list"
+        fields:
+          - label: "Label"
+            name: "label"
+            widget: "string"
+          - label: "Link"
+            name: "link"
+            widget: "string"
+          - label: "Image"
+            name: "image"
+            widget: "image"

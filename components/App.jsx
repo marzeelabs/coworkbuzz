@@ -13,6 +13,7 @@ import Intro from 'homepage/Intro';
 import About from 'homepage/About';
 import Register from 'homepage/Register';
 import ScheduleDay from 'homepage/ScheduleDay';
+import Partners from 'homepage/Partners';
 
 [
   Previews,
@@ -29,6 +30,7 @@ import ScheduleDay from 'homepage/ScheduleDay';
   About,
   Register,
   ScheduleDay,
+  Partners,
 ].forEach((Comp) => {
   Comp.initialize();
 });
