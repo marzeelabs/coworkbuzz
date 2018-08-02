@@ -20,6 +20,10 @@
   }
 }
 
+.partners-main {
+  margin: ritmo(3) auto ritmo(7) auto;
+}
+
 .partners__organization {
   text-align: left;
   //@include span(6);
@@ -47,12 +51,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  p {
-    text-transform: uppercase;
-    font-weight: 700;
-    @include ritmo-font-size(12px);
-  }
 }
 
 .partners__support__link {
@@ -67,4 +65,8 @@
       margin: 0;
     }
   }
+}
+
+.partners__logo {
+  width: 64px;
 }

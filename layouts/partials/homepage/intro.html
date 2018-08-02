@@ -1,15 +1,7 @@
-<section class="intro-section" id="intro-section">
-  <div class="intro-section__inner">
-    <div class="intro-section__title">
-      <img src="/media/home/coworkbuzz_logo.png" />
-
-      <a class="intro-section__action" href="{{ $.Site.Data.settings.ticketurl }}" target="_blank">Get ticket</a>
-
-      <span class="intro-section__subtitle">
-        8 & 9 December 2017
-        <br>
-        in Matosinhos, Porto
-      </span>
-    </div>
-  </div>
-</section>
+<Intro
+  ticketurl="{{ $.Site.Data.settings.ticketurl }}"
+  {{ with .Site.GetPage "page" "homepage/intro" }}
+    when="{{ .Params.when }}"
+    where="{{ .Params.where }}"
+  {{ end }}
+></Intro>

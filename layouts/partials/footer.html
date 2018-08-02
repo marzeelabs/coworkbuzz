@@ -1,3 +1,8 @@
 <EndFooter>
-  <SocialIcon name="facebook" link="{{ $.Site.Data.settings.facebook }}"></SocialIcon>
+  {{ if ne $.Site.Data.settings.facebook "" }}
+    <SocialIcon name="facebook" link="{{ $.Site.Data.settings.facebook }}"></SocialIcon>
+  {{ end }}
+  {{ if ne $.Site.Data.settings.twitter "" }}
+    <SocialIcon name="twitter" link="https://twitter.com/{{ replace $.Site.Data.settings.twitter "@" "" }}"></SocialIcon>
+  {{ end }}
 </EndFooter>
