@@ -8,9 +8,6 @@ import SlideShow from 'partials/SlideShow';
 import SocialIcons from 'partials/SocialIcons';
 import MoreArrow from 'MoreArrow';
 import SrcSet, { SrcSetBg } from 'SrcSet';
-import PersonCard from 'people/Card';
-import Person from 'people/Person';
-import BlogPost from 'blog/BlogPost';
 
 [
   Previews,
@@ -22,9 +19,6 @@ import BlogPost from 'blog/BlogPost';
   MoreArrow,
   SrcSet,
   SrcSetBg,
-  PersonCard,
-  Person,
-  BlogPost,
 ].forEach((Comp) => {
   Comp.initialize();
 });
