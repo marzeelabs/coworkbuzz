@@ -68,7 +68,8 @@ export default class ScheduleDay extends BesugoComponent {
         className += ' schedule__line--break';
       }
 
-      const subs = (!slot.subs.size) ? null : (
+      // Map in CMS, array in front...
+      const subs = (!slot.subs.size && !slot.subs.length) ? null : (
         <ul>
           { slot.subs.map(sub => (
             <li key={ `schedule-line-sub-${sub.label}` }>
