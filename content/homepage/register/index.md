@@ -3,14 +3,14 @@ title: Enter here to edit.
 header: Register
 tickets:
   - name: Early Bird
+    option: VAT included
     price: 55€
-    option: VAT included
   - name: Full Price
-    price: 65€
     option: VAT included
+    price: 65€
 ---
 The community will have an awesome time together, learning by sharing.
 
-**Did you go to Cowork Buzz 2016?**\
+**Did you go to Cowork Buzz 2017?**\
 We've got a special price for you! :-)\
-Hurry up, offer ends 14th of November.
+Hurry up, offer ends 14th of September.
