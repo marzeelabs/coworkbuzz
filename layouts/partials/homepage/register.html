@@ -7,7 +7,12 @@
       {{ jsonify .Content }}
     </Content>
     {{ range .Params.tickets }}
-      <Ticket name="{{ .name }}" price="{{ .price }}" option="{{ .option }}"></Ticket>
+      <Ticket
+        name="{{ .name }}"
+        price="{{ .price }}"
+        option="{{ .option }}"
+        btnlabel="{{ .btnlabel }}"
+      ></Ticket>
     {{ end }}
   </Register>
 {{ end }}

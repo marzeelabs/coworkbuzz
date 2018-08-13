@@ -5,9 +5,11 @@ tickets:
   - name: Early Bird
     price: 55€
     option: VAT included
+    btnlabel: Get ticket!
   - name: Full Price
     price: 65€
     option: VAT included
+    btnlabel: Get ticket!
 ---
 The community will have an awesome time together, learning by sharing.
 
