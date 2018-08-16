@@ -32,6 +32,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Ticket URL"
         name: "ticketurl"
         widget: "string"
+        required: false
       - label: "E-mail"
         name: "email"
         widget: "string"
@@ -116,6 +117,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Tickets"
         name: "tickets"
         widget: "list"
+        required: false
         fields:
           - label: "Name"
             name: "name"
