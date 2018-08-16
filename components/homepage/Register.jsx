@@ -5,6 +5,7 @@ import ReactHtmlParser from 'react-html-parser';
 import SVGElements from 'partials/SVGElements';
 import TopHeader from 'partials/TopHeader';
 import EndFooter from 'partials/EndFooter';
+import MoreArrow from 'MoreArrow';
 
 export default class Register extends BesugoComponent {
   static config = {
@@ -70,6 +71,16 @@ export default class Register extends BesugoComponent {
     ));
   }
 
+  renderMoreArrow(data) {
+    return (data.ticketurl) ? null : (
+      <MoreArrow
+        href="/#contacts"
+        label="Contact us"
+        selNext="#contacts-section"
+      />
+    );
+  }
+
   renderBlock() {
     const data = this.getData();
 
@@ -84,6 +95,9 @@ export default class Register extends BesugoComponent {
         </div>
         <div className="register-options__wrapper">
           { this.renderTickets(data) }
+        </div>
+        <div className="register-component__morearrow-wrapper">
+          { this.renderMoreArrow(data) }
         </div>
       </section>
     );

@@ -83,3 +83,9 @@
   @extend .button-primary;
   padding: ritmo(3) 40px;
 }
+
+.register-component__morearrow-wrapper {
+  padding-top: ritmo(8);
+  margin-bottom: ritmo(-8);
+  position: relative;
+}
