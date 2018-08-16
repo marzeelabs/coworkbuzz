@@ -27,6 +27,14 @@ export default class Intro extends BesugoComponent {
     return this.props;
   }
 
+  renderGetTicket(data) {
+    return (!data.ticketurl) ? null : (
+      <a className="intro-section__action" href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
+        Get ticket
+      </a>
+    );
+  }
+
   renderBlock() {
     const data = this.getData();
 
@@ -57,9 +65,7 @@ export default class Intro extends BesugoComponent {
               <img src="media/home/logo/logo_cowork_line4.svg" className="logo_top-line3" />
             </div>
 
-            <a className="intro-section__action" href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
-              Get ticket
-            </a>
+            { this.renderGetTicket(data) }
 
             <span className="intro-section__subtitle">
               { data.when }

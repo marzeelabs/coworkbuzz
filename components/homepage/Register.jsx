@@ -20,6 +20,7 @@ export default class Register extends BesugoComponent {
       name: ticket.getAttribute('name'),
       price: ticket.getAttribute('price'),
       option: ticket.getAttribute('option'),
+      btnlabel: ticket.getAttribute('btnlabel'),
     }));
   }
 
@@ -36,6 +37,7 @@ export default class Register extends BesugoComponent {
           name: ticket.getIn([ 'name' ]),
           price: ticket.getIn([ 'price' ]),
           option: ticket.getIn([ 'option' ]),
+          btnlabel: ticket.getIn([ 'btnlabel' ]),
         })),
       };
     }
@@ -62,7 +64,7 @@ export default class Register extends BesugoComponent {
           { ticket.option }
         </div>
         <a className="register-option__action" href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
-          Get ticket!
+          { ticket.btnlabel }
         </a>
       </div>
     ));

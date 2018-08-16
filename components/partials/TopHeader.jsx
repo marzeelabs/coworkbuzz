@@ -6,15 +6,22 @@ export default class TopHeader extends BesugoComponent {
     tag: 'TopHeader',
   }
 
-  getData() {
-    // Set some default props
-    return {
-      ticketurl: ('ticketurl' in this.props) ? this.props.ticketurl : '#',
-    };
+  renderGetTicket(data) {
+    return data.ticketurl
+      ? (
+        <a href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
+          Get Ticket
+        </a>
+      )
+      : (
+        <a href="/#register">
+          Get Ticket
+        </a>
+      );
   }
 
   render() {
-    const data = this.getData();
+    const data = this.props;
 
     return (
       <section id="pagetop-section">
@@ -55,9 +62,7 @@ export default class TopHeader extends BesugoComponent {
                 </a>
               </li>
               <li className="navigation__menu__item navigation__menu__item--highlight navigation__menu__item--right">
-                <a href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
-                  Get Ticket
-                </a>
+                { this.renderGetTicket(data) }
               </li>
             </ul>
           </div>

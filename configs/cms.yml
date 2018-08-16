@@ -26,9 +26,13 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Tagline"
         name: "tagline"
         widget: "string"
+      - label: "Short Description"
+        name: "description"
+        widget: "text"
       - label: "Ticket URL"
         name: "ticketurl"
         widget: "string"
+        required: false
       - label: "E-mail"
         name: "email"
         widget: "string"
@@ -113,6 +117,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Tickets"
         name: "tickets"
         widget: "list"
+        required: false
         fields:
           - label: "Name"
             name: "name"
@@ -123,6 +128,10 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Option"
             name: "option"
             widget: "string"
+          - label: "Button label"
+            name: "btnlabel"
+            widget: "string"
+            default: "Get ticket!"
 
   - name: "schedule"
     label: "Schedule"
