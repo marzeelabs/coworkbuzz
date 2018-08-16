@@ -2,11 +2,7 @@
 
   {{ partial "homepage/intro.html" . }}
   {{ partial "homepage/about.html" . }}
-
-  {{ if (ne $.Site.Data.settings.ticketurl "")  }}
-    {{ partial "homepage/register.html" . }}
-  {{ end }}
-
+  {{ partial "homepage/register.html" . }}
   {{ partial "homepage/schedule.html" . }}
   {{ partial "homepage/map.html" . }}
 
@@ -14,10 +10,6 @@
     {{ partial "homepage/organized.html" . }}
     {{ partial "homepage/partners.html" . }}
   </div>
-
-  {{ if (eq $.Site.Data.settings.ticketurl "") }}
-    {{ partial "homepage/register.html" . }}
-  {{ end }}
 
   {{ partial "homepage/contacts.html" . }}
 
