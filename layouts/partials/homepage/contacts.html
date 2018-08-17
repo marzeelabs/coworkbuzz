@@ -1,0 +1,53 @@
+<section class="contacts-section" id="contacts-section">
+  <h4 class="section-titles">Contact Us</h4>
+  <div class="section-titles__underlines"></div>
+  <p>
+    Get in touch, we like to have penfriends. :-)
+    <br>
+    Shoot us an email at <a href="mailto:{{ $.Site.Data.settings.email }}" target="_blank">{{ $.Site.Data.settings.email }}</a>.
+  </p>
+  <div class="contact-form">
+    <form class="contact-form__validate" id="embedded-subscribe-form" action="https://formspree.io/{{ $.Site.Data.settings.email }}" method="post" name="embedded-subscribe-form" target="_blank" novalidate="novalidate">
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div class="contact-form__bot" style="position: absolute; left: -5000px;">
+        <input type="text"
+          name=""
+          tabindex="-1"
+          value="" />
+      </div>
+      <div class="contact-form__inputs">
+        <input class="contact-form__inputs__content"
+          id="NAME"
+          type="name"
+          value=""
+          name="NAME"
+          placeholder="NAME"
+          required="required" />
+      </div>
+      <div class="contact-form__inputs">
+        <input class="contact-form__inputs__content"
+          id="EMAIL"
+          type="email"
+          value=""
+          name="EMAIL"
+          placeholder="E-MAIL"
+          required="required" />
+      </div>
+      <div class="contact-form__inputs--message-field">
+        <textarea class="contact-form__inputs__content"
+          id="MESSAGE"
+          type="message"
+          value=""
+          name="MESSAGE"
+          placeholder="MESSAGE"></textarea>
+      </div>
+      <div class="contact-form__inputs">
+        <input class="contact-form__inputs__submit"
+          id="embedded-subscribe"
+          type="submit"
+          value="Send"
+          name="send" />
+      </div>
+    </form>
+  </div>
+</section>

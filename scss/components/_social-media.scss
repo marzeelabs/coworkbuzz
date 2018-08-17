@@ -1,0 +1,27 @@
+.social__wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.social {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social li {
+  display: inline-block;
+  margin-right: ritmo(4);
+  @include ritmo-font-size(50px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a span {
+    transition: color ease 0.3s;
+
+    &:hover {
+
+    }
+  }
+}

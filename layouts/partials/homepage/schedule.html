@@ -1,0 +1,27 @@
+<section class="schedule-section" id="schedule-section">
+  <h4 class="section-titles">What's happening</h4>
+  <div class="section-titles__underlines"></div>
+  <div class="schedules__wrapper">
+    {{ range where .Site.Pages ".Dir" "homepage/schedule/" }}
+      <ScheduleDay
+        name="{{ .Params.name }}"
+        day="{{ .Params.day }}"
+      >
+        <Content>
+          {{ jsonify .Content }}
+        </Content>
+        {{ range .Params.plan }}
+          <Slot
+            slot="{{ .slot }}"
+            name="{{ .name }}"
+            break="{{ .break }}"
+          >
+            <Subs>
+              {{ jsonify .subs }}
+            </Subs>
+          </Slot>
+        {{ end }}
+      </ScheduleDay>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,8 @@
+<Intro
+  ticketurl="{{ $.Site.Data.settings.ticketurl }}"
+  {{ with .Site.GetPage "page" "homepage/intro" }}
+    when="{{ .Params.when }}"
+    where="{{ .Params.where }}"
+    banner="{{ .Params.banner }}"
+  {{ end }}
+></Intro>

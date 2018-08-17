@@ -1,0 +1,9 @@
+{{ with .Site.GetPage "page" "homepage/about" }}
+  <About
+    header="{{ .Params.header }}"
+  >
+    <Content>
+      {{ jsonify .Content }}
+    </Content>
+  </About>
+{{ end }}

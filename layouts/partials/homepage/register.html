@@ -1,0 +1,18 @@
+{{ with .Site.GetPage "page" "homepage/register" }}
+  <Register
+    ticketurl="{{ $.Site.Data.settings.ticketurl }}"
+    header="{{ .Params.header }}"
+  >
+    <Content>
+      {{ jsonify .Content }}
+    </Content>
+    {{ range .Params.tickets }}
+      <Ticket
+        name="{{ .name }}"
+        price="{{ .price }}"
+        option="{{ .option }}"
+        btnlabel="{{ .btnlabel }}"
+      ></Ticket>
+    {{ end }}
+  </Register>
+{{ end }}

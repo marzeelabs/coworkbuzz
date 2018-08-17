@@ -1,0 +1,18 @@
+<meta name="description" content="{{ $.Site.Data.settings.description }}">
+<!-- <meta name="author" content="{{ .Site.Author }}"> -->
+
+<meta property="og:title" content="{{ $.Scratch.Get "pagetitle" }}">
+<meta property="og:description" content="{{ $.Site.Data.settings.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .URL | absLangURL }}">
+<meta property="og:site_name" content="{{ $.Site.Data.settings.name }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}/media/default-thumbnail.jpg">
+
+{{ if ne $.Site.Data.settings.twitter "" }}
+  <meta name="twitter:site" content="{{ $.Site.Data.settings.twitter }}">
+  <meta name="twitter:creator" content="{{ $.Site.Data.settings.twitter }}">
+{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $.Scratch.Get "pagetitle" }}">
+<meta name="twitter:description" content="{{ $.Site.Data.settings.description }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}/media/default-thumbnail.jpg">

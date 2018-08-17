@@ -1,0 +1,10 @@
+{{ with .Site.GetPage "page" "homepage/partners" }}
+  <Partners>
+    <Content>
+      {{ jsonify .Content }}
+    </Content>
+    {{ range .Params.partners }}
+      <Partner label="{{ .label }}" link="{{ .link }}" image="{{ .image }}"></Partner>
+    {{ end }}
+  </Partners>
+{{ end }}
