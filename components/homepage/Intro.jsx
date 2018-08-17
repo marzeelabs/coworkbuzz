@@ -21,6 +21,7 @@ export default class Intro extends BesugoComponent {
         ticketurl: '#',
         when: data.getIn([ 'when' ]),
         where: data.getIn([ 'where' ]),
+        banner: data.getIn([ 'banner' ]) ? this.props.getAsset(data.getIn([ 'banner' ])).toString() : '',
       };
     }
 
@@ -41,7 +42,7 @@ export default class Intro extends BesugoComponent {
     return (
       <section className="intro-section" id="intro-section">
         <SrcSetBg
-          src="/media/home/intro.jpg"
+          src={ data.banner }
           sizes="100vw"
         />
 
