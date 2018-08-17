@@ -80,6 +80,9 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Where"
         name: "where"
         widget: "string"
+      - label: "Banner image"
+        name: "banner"
+        widget: "image"
 
   - name: "about"
     label: "About"
