@@ -14,14 +14,14 @@ export default class Intro extends BesugoComponent {
 
   getData() {
     if (this.isPreview()) {
-      const { entry } = this.props;
+      const { entry, getAsset } = this.props;
       const data = entry.getIn([ 'data' ]);
 
       return {
         ticketurl: '#',
         when: data.getIn([ 'when' ]),
         where: data.getIn([ 'where' ]),
-        banner: data.getIn([ 'banner' ]) ? this.props.getAsset(data.getIn([ 'banner' ])).toString() : '',
+        banner: data.getIn([ 'banner' ]) ? getAsset(data.getIn([ 'banner' ])).toString() : '',
       };
     }
 
