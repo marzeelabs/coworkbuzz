@@ -1,7 +1,7 @@
 ---
 title: Day 1
-name: To be announced!
-day: Stay tunned for news!
+name: Day 1
+day: Let's get this party started!
 plan:
   - name: Registration
     slot: 14h00 - 15h00
