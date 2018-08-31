@@ -4,7 +4,7 @@ name: Day 2
 day: Building something big. Together.
 plan:
   - name: Breakfast
-    slot: 9h00 - 10h00
+    slot: 09h00 - 10h00
   - break: true
     name: Introduction session
     slot: 10h00 - 10h30
