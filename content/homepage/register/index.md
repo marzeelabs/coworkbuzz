@@ -1,8 +1,10 @@
 ---
 title: Enter here to edit.
-header: Register
+header: Register now!
 tickets:
+  - btnlabel: Available!
+    name: early-bird
+    option: On sale until 30.09.2018
+    price: 55€
 ---
-**Tickets are still not for sale! Sales open very soon!**
-
-Want to know how soon?
+_**2 days of impact, fun, and surprises!**_

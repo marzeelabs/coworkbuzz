@@ -6,4 +6,4 @@ header: Learning by sharing
 
 Our main idea is to bring the community together: coworking managers, founders, community managers, people interested in developing a project related to this area. Let's help each other to understand where are we standing, what are the trends, common difficulties, strengths, and **unite and grow**.
 
-This year it will take place in the 12th and 13th of October, it’s just around the corner! So stay in touch, and updated on our news!
+This year it will take place in the 19th and 20th of October, it’s just around the corner! So stay in touch, and [**updated on our news!**](https://www.facebook.com/coworkbuzz)
