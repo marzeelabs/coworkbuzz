@@ -7,4 +7,4 @@ tickets:
     option: On sale until 30.09.2018
     price: 55€
 ---
-_**2 days of impact, fun, and surprises!**_
+
