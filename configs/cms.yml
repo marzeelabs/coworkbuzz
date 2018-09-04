@@ -137,6 +137,7 @@ collections: # A list of collections the CMS should be able to edit
             name: "btnlabel"
             widget: "string"
             default: "Get ticket!"
+            required: false
 
   - name: "schedule"
     label: "Schedule"
