@@ -64,9 +64,11 @@ export default class Register extends BesugoComponent {
         <div className="register-option__note">
           { ticket.option }
         </div>
-        <a className="register-option__action" href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
-          { ticket.btnlabel }
-        </a>
+        { !ticket.btnlabel ? null : (
+          <a className="register-option__action" href={ data.ticketurl } target="_blank" rel="noopener noreferrer">
+            { ticket.btnlabel }
+          </a>
+        ) }
       </div>
     ));
   }
