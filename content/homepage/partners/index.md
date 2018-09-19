@@ -1,5 +1,8 @@
 ---
 title: Enter here to edit.
 partners:
+  - image: /media/uploads/coworkies.jpg
+    label: Coworkies
+    link: 'https://www.coworkies.com/'
 ---
-This event wouldn’t be possible without the beautiful people behind our partners.
+We wouldn't have been able to make this conference possible without the extraordinary help of our sponsors.
