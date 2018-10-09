@@ -2,11 +2,11 @@
 title: Enter here to edit.
 header: Register now!
 tickets:
-  - btnlabel: Available!
+  - btnlabel: ''
     name: early-bird
     option: On sale until 04.10.2018
     price: 55€
-  - btnlabel: ''
+  - btnlabel: Available
     name: Full-Price
     option: Sale starts on 05.10.2018
     price: 65€
