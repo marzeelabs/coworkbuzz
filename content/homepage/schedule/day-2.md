@@ -20,7 +20,9 @@ plan:
   - break: true
     name: Coffee Break
     slot: 12h00 - 12h30
-  - name: 'Locals, Digital Nomads, and Companies: Which are Better for Business?'
+  - name: >-
+      Locals, Digital Nomads, and Companies: different crowds under the same
+      roof
     slot: 12h30 - 14h00
     subs: []
   - break: true
@@ -35,11 +37,12 @@ plan:
   - break: true
     name: Coffee Break
     slot: 17h30 - 18h00
-  - name: How Can Coworking Spaces Maximize Their Social Impact?
-    slot: 18h00 - 19h00
+  - break: false
+    name: '#nofootprintnomads'
+    slot: '18h00 - 18h30 '
   - break: true
-    name: Portugal Coworking Association?
-    slot: '19h00 - 19h30 '
+    name: How Can Coworking Spaces Maximize Their Social Impact?
+    slot: 18h30 - 19h30
   - name: Wrap-Up
     slot: 19h30 - 20h00
   - break: true
