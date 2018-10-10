@@ -8,7 +8,7 @@ tickets:
     price: 55€
   - btnlabel: Available
     name: Full-Price
-    option: Sale starts on 05.10.2018
+    option: Sale end on 16.10.2018
     price: 65€
 ---
 _**2 days of impact, fun, and surprises!**_
