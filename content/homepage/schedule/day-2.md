@@ -12,25 +12,26 @@ plan:
     name: Parallel Sessions
     slot: 10h30 - 12h00
     subs:
-      - label: 'Marketing for coworking spaces: essential tools, skills and techniques'
+      - label: >-
+          Marketing for coworking spaces: essential tools & skills. How to
+          start.
       - label: How to increase profitability? Parallel and umbrella projects.
-      - label: 'Coliving: A fad or would it work in your city?'
+      - label: 'Coworkers: their experience and community building.'
   - break: true
     name: Coffee Break
     slot: 12h00 - 12h30
   - name: 'Locals, Digital Nomads, and Companies: Which are Better for Business?'
     slot: 12h30 - 14h00
+    subs: []
   - break: true
     name: Lunch & Coffee
     slot: 14h00 - 15h30
   - name: Parallel Sessions
     slot: 16h00 - 17h30
     subs:
-      - label: 'Gen Z is here, but are they coming into your space?'
-      - label: >-
-          Is it time to grow your team? Who do you need? When can you tell it's
-          time?
-      - label: Opening your next space / Closing your last one.
+      - label: Alternative ways of doing cowork
+      - label: 'Is it time to grow your team? Profiles, structures, management tools.'
+      - label: 'Growing: Coliving/ Opening your next space / Closing your last one.'
   - break: true
     name: Coffee Break
     slot: 17h30 - 18h00
