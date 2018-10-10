@@ -8,17 +8,17 @@ plan:
   - break: true
     name: Opening and Introduction Session
     slot: 15h00 - 16h00
-  - name: 'State of coworking 2019: Europe, Asia, and the Portuguese Reality'
-    slot: 16h00 - 17h30
+  - name: 'Coworking Community: people and their stories'
+    slot: 16h00 - 17h00
   - break: true
     name: Coffee Break
-    slot: 17h30 - 18h00
-  - name: Sharing a city with spaces like Regus or WeWork
-    slot: 18h00 - 19h00
+    slot: 17h00 - 17h30
+  - name: 'State of coworking 2019: Europe and Asia'
+    slot: 17h30 - 18h30
   - break: true
-    name: 'Global brands: How they grow so fast and what''s their impact in Portugal.'
-    slot: 19h00 - 20h00
-  - name: Networking Dinner
-    slot: 20h00
+    name: 'Global brands: Selina experience'
+    slot: 18h30 - 19h30
+  - name: Wrap up & dinner
+    slot: 19h30
 ---
 
