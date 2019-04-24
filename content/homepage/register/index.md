@@ -1,6 +1,6 @@
 ---
 title: Enter here to edit.
-header: Register now!
+header: Register now! (2018)
 tickets:
   - btnlabel: ''
     name: early-bird
