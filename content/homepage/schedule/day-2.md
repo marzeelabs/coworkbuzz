@@ -1,6 +1,6 @@
 ---
 title: Day 2
-name: Day 2
+name: Day 2 (2018)
 day: Building something big. Together.
 plan:
   - name: Breakfast
