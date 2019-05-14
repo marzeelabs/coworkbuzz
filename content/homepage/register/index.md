@@ -2,11 +2,11 @@
 title: Enter here to edit.
 header: Register now!
 tickets:
-  - btnlabel: ''
+  - btnlabel: 'available '
     name: early-bird
     option: On sale until 31.08.2019
     price: 65€
-  - btnlabel: Available
+  - btnlabel: ''
     name: Full-Price
     option: From 01/09/2019 to 25/10/2019
     price: 80€
