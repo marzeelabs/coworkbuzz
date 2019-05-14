@@ -18,7 +18,11 @@ plan:
   - break: true
     name: 'Talks '
     slot: 18h30 - 19h30
-  - name: Wrap up & Dinner* (*not included in the price of the ticket*)
-    slot: 19h30
+  - name: Wrap up
+    slot: 19h30 - 20h00
+  - name: Dinner
+    slot: 20h00
+    subs:
+      - label: (not included in the price of the ticket)
 ---
 
