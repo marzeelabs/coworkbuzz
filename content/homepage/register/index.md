@@ -1,14 +1,14 @@
 ---
 title: Enter here to edit.
-header: Register now! (2018)
+header: Register now!
 tickets:
   - btnlabel: ''
     name: early-bird
-    option: On sale until 04.10.2018
-    price: 55€
+    option: On sale until 31.08.2019
+    price: 65€
   - btnlabel: Available
     name: Full-Price
-    option: Sale end on 16.10.2018
-    price: 65€
+    option: From 01/09/2019 to 25/10/2019
+    price: 80€
 ---
-_**2 days of impact, fun, and surprises!**_
+**3_ days of impact, fun, and surprises!_**
