@@ -1,6 +1,6 @@
 ---
 title: Day 1
-name: Day 1 (2018)
+name: Day 1
 day: Let's get this party started!
 plan:
   - name: Registration
