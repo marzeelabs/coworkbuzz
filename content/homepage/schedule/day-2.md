@@ -19,7 +19,7 @@ plan:
     slot: 12h30 - 14h00
     subs: []
   - break: true
-    name: Lunch & Coffee (not included in the price of the ticket)
+    name: Lunch* & Coffee (*not included in the price of the ticket)
     slot: 14h00 - 15h30
   - name: Parallel sessions (unconference style)
     slot: 15h30 - 17h00
