@@ -19,7 +19,7 @@ plan:
     slot: 12h30 - 14h00
     subs: []
   - break: true
-    name: Lunch* & Coffee
+    name: Lunch & Coffee
     slot: 14h00 - 15h30
     subs: []
   - name: Parallel sessions (unconference style)
