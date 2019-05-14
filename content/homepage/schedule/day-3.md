@@ -10,7 +10,7 @@ plan:
       and optional for all people interested in getting to know the city
       collaborative space industry.
     slot: 10h00 - 14h00
-  - name: Free day in Porto
+  - name: Free day
     slot: 14h00 - 18h00
 ---
 >
