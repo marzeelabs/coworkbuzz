@@ -21,8 +21,7 @@ plan:
   - break: true
     name: Lunch* & Coffee
     slot: 14h00 - 15h30
-    subs:
-      - label: (*not included in the price of the ticket)
+    subs: []
   - name: Parallel sessions (unconference style)
     slot: 15h30 - 17h00
     subs: []
@@ -37,7 +36,6 @@ plan:
     slot: 19h00 - 19h30
   - name: 'Dinner + Party '
     slot: '19h30 '
-    subs:
-      - label: (not included in the price of the ticket)
+    subs: []
 ---
 
