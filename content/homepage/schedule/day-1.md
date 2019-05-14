@@ -22,7 +22,6 @@ plan:
     slot: 19h30 - 20h00
   - name: Dinner
     slot: 20h00
-    subs:
-      - label: (not included in the price of the ticket)
+    subs: []
 ---
 
