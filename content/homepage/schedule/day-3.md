@@ -9,8 +9,8 @@ plan:
       to know the coworking spaces in Porto.  This agenda is free and optional
       for all people interested in getting to know Porto’s collaborative space
       industry.
-    slot: 10h00-14h00
+    slot: 10h00 - 14h00
   - name: Free day in Porto
-    slot: 14h00-18h00
+    slot: 14h00 - 18h00
 ---
 >
