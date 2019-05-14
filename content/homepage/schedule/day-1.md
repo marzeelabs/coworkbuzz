@@ -4,21 +4,21 @@ name: Day 1 (2018)
 day: Let's get this party started!
 plan:
   - name: Registration
-    slot: 14h00 - 15h00
+    slot: 14h00 - 14h30
   - break: true
-    name: Opening and Introduction Session
-    slot: 15h00 - 16h00
-  - name: 'Coworking Community: people and their stories'
+    name: 'Opening and Get to Know '
+    slot: 14h30 - 16h00
+  - name: 'Coworking scene: from the World to Portugal'
     slot: 16h00 - 17h00
   - break: true
     name: Coffee Break
     slot: 17h00 - 17h30
-  - name: 'State of coworking 2019: Europe and Asia'
+  - name: Diversity in the market
     slot: 17h30 - 18h30
   - break: true
-    name: 'Global brands: Selina experience'
+    name: 'Talks '
     slot: 18h30 - 19h30
-  - name: Wrap up & dinner
+  - name: Wrap up & Dinner* (*not included in the price of the ticket*)
     slot: 19h30
 ---
 
