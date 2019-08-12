@@ -8,7 +8,7 @@ plan:
   - break: true
     name: 'Opening and Get to Know '
     slot: 14h30 - 15h40
-  - name: Keynote
+  - name: 'Key note: "Uniqueness in action"'
     slot: 15h40 - 16h00
   - break: true
     name: 'Coworking Worldwide: news & updates'
