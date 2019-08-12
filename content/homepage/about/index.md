@@ -5,17 +5,15 @@ header: Learning by sharing
 **Cowork Buzz** was born in 2016 as an **event dedicated to cowork and coliving**, curated with a special touch. Since the buzz is really huge, we are here to stay and continue bringing the coworking ecosystem forward.
 
 \
-**This year it will take place on 25th and 26th of October** so it’s just around the corner! 
+**This year it will take place on 25th and 26th of October** so it’s just around the corner! The motto of this edition is **“Unique is the new black”**. With more and more spaces popping up on the market it’s important to know how to stay You. And it’s not only about being different and having an outstanding concept, but it’s about the ability to push the limits existing in our head. 
 
 \
-This years edition will be special. Portugal’s potential in the collaborative space industry has grown rapidly and Cowork Buzz is here to bring together the main stakeholders who play a significant role in impacting this growth.  
+So, we want this edition to be special. Portugal’s potential in the collaborative space industry has grown rapidly and Cowork Buzz is here to bring together the main stakeholders who play a significant role in impacting this growth. As main goals for this conference, we want to show you how you can be and think "Out of the box", what are "The mechanisms of growth", and "The Industry as network". 
 
 This year we count with managers of coworking spaces, founders, community managers, people interested in developing a project related to this field, space design innovation companies, real estate groups and students interested in the subject. Let’s help each other to understand where are we standing, what are the trends, common difficulties, strengths, and **unite and grow.**
 
-> Meantime, join us at the spring Cowork Buzz Roadshow in Lisbon and Porto. 
-
-[**Lisbon: 15th of May @ Now_Beato**](https://www.facebook.com/events/2020829851379882/)
-
-[**Porto: 22nd of May @ Porto i/o Santa Catarina**](https://www.facebook.com/events/2754315744578846/)
+> **Early Birds tickets are on sale until 31st of August of 2019. **
+>
+> [**Buy your tickets here. **](https://events.eventzilla.net/e/cowork-buzz-2019-2138746820)
 
 ##
