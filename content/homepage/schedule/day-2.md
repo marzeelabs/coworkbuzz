@@ -22,20 +22,26 @@ plan:
     name: Lunch & Coffee
     slot: 14h00 - 15h30
     subs: []
-  - name: Parallel sessions (unconference style)
-    slot: 15h30 - 17h00
+  - name: Second tier cities
+    slot: 15h30 - 16h00
     subs: []
   - break: true
-    name: Coffee Break
-    slot: 17h00 - 17h30
+    name: Speed dating
+    slot: 16h00 - 17h30
   - break: false
-    name: Talks
-    slot: '17h30 - 19h00 '
+    name: Coffee Break
+    slot: 17h30 - 18h15
   - break: true
-    name: Wrap-up + networking
+    name: Grow as you go
+    slot: '18h15 - 19h00 '
+  - name: Coworking Conferences Panel
     slot: 19h00 - 19h30
-  - name: 'Dinner + Party '
-    slot: '19h30 '
+  - break: true
+    name: Wrap-up + Networking
+    slot: 19h30 - 20h00
+  - break: false
+    name: 'Dinner + Party '
+    slot: '20h00 '
     subs: []
 ---
 
