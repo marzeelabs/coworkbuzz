@@ -7,5 +7,11 @@ partners:
   - image: /media/uploads/piquenique.jpg
     label: 'Piquenique '
     link: 'https://www.facebook.com/o.piquenique/'
+  - image: /media/uploads/doce-ternura.jpeg
+    label: 'Doce Ternura '
+    link: 'https://www.facebook.com/doceternuraporto/'
+  - image: /media/uploads/cmm.jpeg
+    label: 'Matosinhos City Hall '
+    link: 'https://www.cm-matosinhos.pt/'
 ---
 We wouldn't have been able to make this conference possible without the extraordinary help of our sponsors & partners.
