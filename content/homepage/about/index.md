@@ -12,8 +12,8 @@ So, we want this edition to be special. Portugal’s potential in the collaborat
 
 This year we count with managers of coworking spaces, founders, community managers, people interested in developing a project related to this field, space design innovation companies, real estate groups and students interested in the subject. Let’s help each other to understand where are we standing, what are the trends, common difficulties, strengths, and **unite and grow.**
 
-> **Early Birds tickets are on sale until 31st of August of 2019. **
+> **Early Birds tickets are on sale until 31st of August of 2019.**
 >
-> [**Buy your tickets here.**](https://events.eventzilla.net/e/cowork-buzz-2019-2138746820)
+> [**Buy your tickets here. **](https://events.eventzilla.net/e/cowork-buzz-2019-2138746820)
 
 ##
