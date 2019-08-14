@@ -14,6 +14,6 @@ This year we count with managers of coworking spaces, founders, community manage
 
 > **Early Birds tickets are on sale until 31st of August of 2019.**
 >
-> [**Buy your tickets here. **](https://events.eventzilla.net/e/cowork-buzz-2019-2138746820)
+> [**Buy your tickets here.**](https://events.eventzilla.net/e/cowork-buzz-2019-2138746820)
 
 ##
