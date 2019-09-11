@@ -11,4 +11,4 @@ tickets:
     option: From 01/09/2019 to 25/10/2019
     price: 80€
 ---
-2**_ days of impact, fun, and surprises!_**
+_**2 days of impact, fun, and surprises!**_
