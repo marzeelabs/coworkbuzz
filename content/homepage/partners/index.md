@@ -1,9 +1,6 @@
 ---
 title: Enter here to edit.
 partners:
-  - image: /media/uploads/cmm.jpeg
-    label: 'Matosinhos City Hall '
-    link: 'https://www.cm-matosinhos.pt/'
   - image: /media/uploads/coworkies.jpg
     label: Coworkies
     link: 'https://www.coworkies.com/'
