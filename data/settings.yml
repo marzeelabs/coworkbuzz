@@ -10,9 +10,6 @@ email: hello@coworkbuzz.com
 facebook: 'http://facebook.com/coworkbuzz'
 twitter: 'https://twitter.com/CoworkBuzz'
 map: >-
-  <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24022.00266368899!2d-8.702609640296041!3d41.18361242411996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24689da50b488b%3A0x400ebbde49038d0!2sMatosinhos!5e0!3m2!1sen!2spt!4v1568634472088!5m2!1sen!2spt"
-  width="600" height="450" frameborder="0" style="border:0;"
-  allowfullscreen=""></iframe>
+  https://www.google.pt/maps/place/Matosinhos/@41.1836124,-8.7026096,14z/data=!3m1!4b1!4m5!3m4!1s0xd24689da50b488b:0x400ebbde49038d0!8m2!3d41.1844362!4d-8.6962775
 ga: UA-51254986-3
 fp: ''
