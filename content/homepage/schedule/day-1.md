@@ -31,4 +31,4 @@ plan:
     slot: 20h00
     subs: []
 ---
-![](/media/uploads/6.png)
+![null](/media/uploads/6.png)
