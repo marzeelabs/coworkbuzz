@@ -5,16 +5,22 @@ day: Building something big. Together.
 plan:
   - name: Breakfast
     slot: 09h00 - 10h00
+    subs:
+      - label: By Piquenique
   - break: true
     name: Morning Welcome
     slot: 10h00 - 10h30
   - break: false
     name: Workshops
     slot: 10h30 - 12h00
-    subs: []
+    subs:
+      - label: >-
+          How to avoid the ten most common mistakes when branding by Irene Gil
+          (Plázida | Madrid, Spain)
   - break: true
     name: Coffee Break
     slot: 12h00 - 12h30
+    subs: []
   - name: 'Hear your customer '
     slot: 12h30 - 14h00
     subs: []
@@ -24,18 +30,29 @@ plan:
     subs: []
   - name: Second tier cities
     slot: 15h30 - 16h00
-    subs: []
+    subs:
+      - label: 'Moderation: Pauline - Coworkies '
+      - label: 'Nuno Veloso - Porto i/o | Porto, Portugal'
+      - label: 'Krloos Rivera - Social Nest | Valencia, Spain'
   - break: true
     name: Speed dating
     slot: 16h00 - 17h30
+    subs:
+      - label: Creator & facilitator - Sara Ramos | Learning Designer
   - break: false
     name: Coffee Break
     slot: 17h30 - 18h15
   - break: true
     name: Grow as you go
     slot: '18h15 - 19h00 '
-  - name: Coworking Conferences Panel
+    subs:
+      - label: 'Ellie Bryant - ex. Campfire |  London, The UK'
+      - label: Justina Kilinski - Unicorn Workspaces | Portugal & Germany
+      - label: 'Anthony Gutman - Remix | Paris, France'
+  - name: 'Coworking Conferences '
     slot: 19h00 - 19h30
+    subs:
+      - label: Manuel Zea Barral -  Coworking Spain Conference
   - break: true
     name: Wrap-up + Networking
     slot: 19h30 - 20h00
@@ -44,4 +61,4 @@ plan:
     slot: '20h00 '
     subs: []
 ---
-![Speakers day 2](/media/uploads/7.png)
+![Speakers day 2](/media/uploads/speakers-on-day-2.png)
