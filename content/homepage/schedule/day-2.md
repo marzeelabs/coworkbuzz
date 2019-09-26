@@ -41,14 +41,15 @@ plan:
       - label: Creator & facilitator - Sara Ramos | Learning Designer
   - break: false
     name: Coffee Break
-    slot: 17h30 - 18h15
+    slot: 17h30 - 18h00
   - break: true
     name: Grow as you go
-    slot: '18h15 - 19h00 '
+    slot: 18h00 - 19h00
     subs:
       - label: 'Ellie Bryant - ex. Campfire |  London, The UK'
       - label: Justina Kilinski - Unicorn Workspaces | Portugal & Germany
       - label: 'Anthony Gutman - Remix | Paris, France'
+      - label: Romulo Navarrete - Seedspace | Global
   - name: 'Coworking Conferences '
     slot: 19h00 - 19h30
     subs:
