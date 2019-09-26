@@ -44,18 +44,19 @@ plan:
     slot: 17h30 - 18h15
   - break: true
     name: Grow as you go
-    slot: '18h15 - 19h00 '
+    slot: '18h15 - 19h15 '
     subs:
       - label: 'Ellie Bryant - ex. Campfire |  London, The UK'
       - label: Justina Kilinski - Unicorn Workspaces | Portugal & Germany
       - label: 'Anthony Gutman - Remix | Paris, France'
+      - label: Romulo Navarrete - Seedspace | Global
   - name: 'Coworking Conferences '
-    slot: 19h00 - 19h30
+    slot: 19h15 - 19h45
     subs:
       - label: Manuel Zea Barral -  Coworking Spain Conference
   - break: true
     name: Wrap-up + Networking
-    slot: 19h30 - 20h00
+    slot: 19h45 - 20h00
   - break: false
     name: 'Dinner + Party '
     slot: '20h00 '
