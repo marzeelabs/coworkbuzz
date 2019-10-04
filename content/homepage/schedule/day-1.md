@@ -48,4 +48,4 @@ plan:
     slot: 20h00
     subs: []
 ---
-![](/media/uploads/day-1-speakers-.png)
+![null](/media/uploads/speakers-updated.png)
