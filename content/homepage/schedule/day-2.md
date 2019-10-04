@@ -46,7 +46,7 @@ plan:
     name: Grow as you go
     slot: 18h00 - 19h00
     subs:
-      - label: 'Ellie Bryant - ex. Campfire |  London, The UK'
+      - label: 'Ellie Bryant - ex Campfire |  London, The UK'
       - label: Justina Kilinski - Unicorn Workspaces | Portugal & Germany
       - label: 'Anthony Gutman - Remix | Paris, France'
       - label: Romulo Navarrete - Seedspace | Global
