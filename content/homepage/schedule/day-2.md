@@ -62,4 +62,4 @@ plan:
     slot: '20h00 '
     subs: []
 ---
-![Speakers day 2](/media/uploads/speakers-on-day-2.png)
+![Speakers day 2](/media/uploads/speakers-updated-day-2.png)
