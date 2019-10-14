@@ -30,9 +30,8 @@ plan:
       - label: 'Irene Gil - Plázida | Madrid, Spain'
       - label: 'Nicola Henriques - Silos | Caldas da Rainha, Portugal'
       - label: 'Katja Thiede - Jugglehub | Berlin, Germany'
-      - label: 'Verónica Belchior - CO Project | Tomár, Portugal'
-      - label: 'Vasili Sofiadellis - Changemakers Lab | Lesvos, Greece'
       - label: 'Anthony Gutman - Remix | Paris, France'
+      - label: 'Vasili Sofiadellis - Changemakers Lab | Lesvos, Greece'
   - break: true
     name: 'New spaces, new stories'
     slot: 18h45 - 19h30
