@@ -41,7 +41,7 @@ plan:
       - label: 'Nuno Veloso - Porto i/o | Porto, Portugal'
       - label: 'Krloos Rivera - Social Nest | Valencia, Spain'
   - break: true
-    name: Speed dating
+    name: Co-dating
     slot: 16h00 - 17h30
     subs:
       - label: Creator & facilitator - Sara Ramos | Learning Designer
