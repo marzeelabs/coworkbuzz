@@ -41,7 +41,7 @@ plan:
       - label: 'Nuno Veloso - Porto i/o | Porto, Portugal'
       - label: 'Krloos Rivera - Social Nest | Valencia, Spain'
   - break: true
-    name: Speed dating
+    name: Co-dating
     slot: 16h00 - 17h30
     subs:
       - label: Creator & facilitator - Sara Ramos | Learning Designer
@@ -56,7 +56,7 @@ plan:
       - label: Justina Kilinski - Unicorn Workspaces | Portugal & Germany
       - label: 'Anthony Gutman - Remix | Paris, France'
       - label: Romulo Navarrete - Seedspace | Global
-  - name: 'Coworking Conferences '
+  - name: 'Coworking Conferences: why, how, what'
     slot: 19h00 - 19h30
     subs:
       - label: Manuel Zea Barral -  Coworking Spain Conference
@@ -68,4 +68,4 @@ plan:
     slot: '20h00 '
     subs: []
 ---
-![Speakers day 2](/media/uploads/speakers-updated-day-2.png)
+![Speakers day 2](/media/uploads/speakers-2.2.png)
