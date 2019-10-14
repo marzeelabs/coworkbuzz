@@ -17,6 +17,12 @@ plan:
       - label: >-
           How to avoid the ten most common mistakes when branding by Irene Gil
           (Plázida | Madrid, Spain)
+      - label: >-
+          Integrating sustainability into your business by Shahnaz Radjy (Casa
+          Beatrix | Guarda, Portugal)
+      - label: >-
+          Automising your finances by Nuno Veloso (Marzee Labs | Porto,
+          Portugal)
   - break: true
     name: Coffee Break
     slot: 12h00 - 12h30
