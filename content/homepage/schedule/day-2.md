@@ -56,7 +56,7 @@ plan:
       - label: Justina Kilinski - Unicorn Workspaces | Portugal & Germany
       - label: 'Anthony Gutman - Remix | Paris, France'
       - label: Romulo Navarrete - Seedspace | Global
-  - name: 'Coworking Conferences '
+  - name: 'Coworking Conferences: why, how, what'
     slot: 19h00 - 19h30
     subs:
       - label: Manuel Zea Barral -  Coworking Spain Conference
@@ -68,4 +68,4 @@ plan:
     slot: '20h00 '
     subs: []
 ---
-![Speakers day 2](/media/uploads/speakers-updated-day-2.png)
+![Speakers day 2](/media/uploads/speakers-2.2.png)
