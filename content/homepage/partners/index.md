@@ -13,5 +13,8 @@ partners:
   - image: /media/uploads/doce-ternura.jpeg
     label: 'Doce Ternura '
     link: 'https://www.facebook.com/doceternuraporto/'
+  - image: /media/uploads/multitema-logo.jpeg
+    label: 'Multitema '
+    link: 'https://www.multitema.pt/'
 ---
 We wouldn't have been able to make this conference possible without the extraordinary help of our sponsors & partners.
