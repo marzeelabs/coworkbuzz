@@ -13,7 +13,7 @@ partners:
   - image: /media/uploads/doce-ternura.jpeg
     label: 'Doce Ternura '
     link: 'https://www.facebook.com/doceternuraporto/'
-  - image: /media/uploads/multitema-logo.jpeg
+  - image: /media/uploads/captura-de-ecrã-2019-10-22-às-09.54.15.png
     label: 'Multitema '
     link: 'https://www.multitema.pt/'
 ---
