@@ -7,7 +7,7 @@ partners:
   - image: /media/uploads/csc-19.svg
     label: 'Coworking Spain Conference '
     link: 'https://coworkingspainconference.es/en'
-  - image: /media/uploads/captura-de-ecrã-2019-10-22-às-09.54.15.png
+  - image: /media/uploads/multitemaonline_cor-1.png
     label: 'Multitema '
     link: 'https://www.multitema.pt/'
   - image: /media/uploads/cobot-logo.png
