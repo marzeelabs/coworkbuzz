@@ -4,12 +4,12 @@ partners:
   - image: /media/uploads/coworkies.jpg
     label: Coworkies
     link: 'https://www.coworkies.com/'
+  - image: /media/uploads/mt.png
+    label: 'Multitema '
+    link: 'http://www.multitemaonline.pt/'
   - image: /media/uploads/csc-19.svg
     label: 'Coworking Spain Conference '
     link: 'https://coworkingspainconference.es/en'
-  - image: /media/uploads/multitemaonline_cor-1.png
-    label: 'Multitema '
-    link: 'http://www.multitemaonline.pt/'
   - image: /media/uploads/cobot-logo.png
     label: Cobot
     link: 'https://www.cobot.me/'
