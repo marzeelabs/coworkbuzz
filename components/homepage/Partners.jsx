@@ -10,7 +10,7 @@ import EndFooter from 'partials/EndFooter';
 export default class Partners extends BesugoComponent {
   static config = {
     tag: 'Partners',
-    categories: [ 'partners' ],
+    categories: ['partners'],
   }
 
   static extraProps(props, xplaceholder) {
@@ -27,14 +27,14 @@ export default class Partners extends BesugoComponent {
   getData() {
     if (this.isPreview()) {
       const { entry } = this.props;
-      const data = entry.getIn([ 'data' ]);
+      const data = entry.getIn(['data']);
 
       return {
         content: this.props.widgetFor('body'),
-        partners: (data.getIn([ 'partners' ]) || []).map(partner => ({
-          label: partner.getIn([ 'label' ]),
-          link: partner.getIn([ 'link' ]),
-          image: partner.getIn([ 'image' ]) ? this.props.getAsset(partner.getIn([ 'image' ])).toString() : '',
+        partners: (data.getIn(['partners']) || []).map(partner => ({
+          label: partner.getIn(['label']),
+          link: partner.getIn(['link']),
+          image: partner.getIn(['image']) ? this.props.getAsset(partner.getIn(['image'])).toString() : '',
         })),
       };
     }
@@ -51,15 +51,17 @@ export default class Partners extends BesugoComponent {
   renderPartners(data) {
     return (!data.partners.size && !data.partners.length) ? null : (
       <div className="partners-wrapper">
-        { data.content }
-        <div className="partners">
-          { data.partners.map(partner => (
-            <div className="partners__support" key={ `partner-${partner.name} `}>
-              <a href={ partner.link } target="_blank" rel="noopener noreferrer">
+        <div className="partners__support__content">
+          {data.content}
+        </div>
+        <div className="partners partners__support__wrapper">
+          {data.partners.map(partner => (
+            <div className="partners__support" key={`partner-${partner.name} `}>
+              <a href={partner.link} target="_blank" rel="noopener noreferrer" className="partners__support__link">
                 <SrcSet
-                  src={ partner.image }
+                  src={partner.image}
                   sizes="64px"
-                  className="partners__logo"
+                  className="partners__support__logo"
                 />
               </a>
             </div>
@@ -81,11 +83,11 @@ export default class Partners extends BesugoComponent {
 
         <div className="partners-wrapper partners-main">
           <p>
-            { 'Our main partner '}
+            {'Our main partner '}
             <a href="https://marzeelabs.org/" target="_blank" rel="noopener noreferrer">
               Marzee Labs
             </a>
-            { ' made this website possible.' }
+            {' made this website possible.'}
             <br />
             If you also need an outstanding web experience you can count on them - cowboy style!
           </p>
@@ -98,7 +100,7 @@ export default class Partners extends BesugoComponent {
           </div>
         </div>
 
-        { this.renderPartners(data) }
+        {this.renderPartners(data)}
       </section>
     );
   }
@@ -108,7 +110,7 @@ export default class Partners extends BesugoComponent {
       <div id="cmsPreview">
         <SVGElements />
         <TopHeader />
-        { this.renderBlock() }
+        {this.renderBlock()}
         <EndFooter />
       </div>
     );
