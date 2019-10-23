@@ -9,7 +9,7 @@ partners:
     link: 'https://coworkingspainconference.es/en'
   - image: /media/uploads/multitemaonline_cor-1.png
     label: 'Multitema '
-    link: 'https://www.multitema.pt/'
+    link: 'http://www.multitemaonline.pt/'
   - image: /media/uploads/cobot-logo.png
     label: Cobot
     link: 'https://www.cobot.me/'
