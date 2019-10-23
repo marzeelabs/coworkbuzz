@@ -34,7 +34,7 @@ plan:
           Creation & facilitation: Carolina Rodrigues (Porto i/o) & Ana Paula
           Rossetto (Marzee Labs)
   - break: true
-    name: Lunch & Coffee
+    name: Pizza lunch by NomadX
     slot: 14h00 - 15h30
     subs: []
   - name: Second tier cities
@@ -71,4 +71,4 @@ plan:
     slot: '20h00 '
     subs: []
 ---
-![Speakers day 2](/media/uploads/speakers-day-2-final.png)
+![Speakers day 2](/media/uploads/speakers-2.2.png)
