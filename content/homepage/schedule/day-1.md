@@ -38,7 +38,7 @@ plan:
     subs:
       - label: 'Moderation: Pauline - Coworkies'
       - label: 'Rui Vieira - Prontos | Caldas da Rainha, Portugal'
-      - label: 'Mário Gomes - Land | Porto, Portugal'
+      - label: 'Sara Silva - HYPEcowork | Alcobaça, Portugal'
   - break: false
     name: Wrap up
     slot: 19h30 - 20h00
@@ -47,4 +47,4 @@ plan:
     slot: 20h00
     subs: []
 ---
-![null](/media/uploads/speakers-updated.png)
+![null](/media/uploads/speakers-day-1-final.png)
