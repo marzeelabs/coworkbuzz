@@ -29,7 +29,10 @@ plan:
     subs: []
   - name: 'Hear your customer '
     slot: 12h30 - 14h00
-    subs: []
+    subs:
+      - label: >-
+          Creation & facilitation: Carolina Rodrigues (Porto i/o) & Ana Paula
+          Rossetto (Marzee Labs)
   - break: true
     name: Lunch & Coffee
     slot: 14h00 - 15h30
@@ -68,4 +71,4 @@ plan:
     slot: '20h00 '
     subs: []
 ---
-![Speakers day 2](/media/uploads/speakers-2.2.png)
+![Speakers day 2](/media/uploads/speakers-day-2-final.png)
