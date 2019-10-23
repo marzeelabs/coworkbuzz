@@ -80,8 +80,8 @@
 //   }
 // }
 .partners__support__link {
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
+  height: 45px;
 }
 
 .partners__logo {
@@ -89,9 +89,7 @@
 }
 
 .partners__support__logo {
-  width: 64px;
-
-  @include mq($from: break-medium) {
-    width: 75px;
-  }
+  width: auto;
+  height: 100%;
+  object-fit: contain;
 }
