@@ -9,7 +9,7 @@ tickets:
     name: Full-Price
     option: From 01/09/2019 to 14/10/2019
     price: 80€
-  - btnlabel: available
+  - btnlabel: ''
     name: last-minute
     option: Available from 15/10/2019
     price: 95€
