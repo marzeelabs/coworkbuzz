@@ -90,7 +90,7 @@
     "eslint-plugin-react": "^7.9.1",
     "find-and-replace": "^1.0.2",
     "glob": "^7.1.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jsdom": "^11.11.0",
     "multispinner": "^0.2.1",
     "node-sass": "^4.8.3",
