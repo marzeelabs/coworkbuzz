@@ -91,7 +91,7 @@
     "find-and-replace": "^1.0.2",
     "glob": "^7.1.2",
     "jquery": "^3.3.1",
-    "jsdom": "^11.11.0",
+    "jsdom": "^16.5.0",
     "multispinner": "^0.2.1",
     "node-sass": "^4.8.3",
     "node-yaml": "^3.1.1",
